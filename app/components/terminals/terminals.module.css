@@ -1,0 +1,13 @@
+.container{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    /* height: 250px; */
+}
+
+.terminal{
+    display:flex; 
+    flex-direction:row; 
+    column-gap:20px; 
+    align-items:center;
+    margin-bottom: 10px;       
+}
