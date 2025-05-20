@@ -11,9 +11,9 @@ import Advert from "./components/advert/advert";
 import Test from "./components/terminals/test";
 import dynamic from 'next/dynamic';
 
-// const MapView = dynamic(() => import('./components/terminals/test'), {
-//   ssr: false, // disables SSR
-// });
+const MapView = dynamic(() => import('./components/terminals/test'), {
+  ssr: false, // disables SSR
+});
 
 
 

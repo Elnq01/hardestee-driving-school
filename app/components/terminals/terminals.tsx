@@ -5,7 +5,13 @@ import { BsBusFront } from "react-icons/bs";
 import { FaAddressBook, FaBus, FaUser } from "react-icons/fa";
 import { FaPerson } from "react-icons/fa6";
 import { useState } from "react";
-import TerminalModal from "./terminalsModal";
+// import TerminalModal from "./terminalsModal";
+import dynamic from 'next/dynamic';
+
+// Prevent SSR for anything using leaflet
+const TerminalModal = dynamic(() => import('./terminalsModal'), {
+  ssr: false,
+});
 
 
 const TerminalsInfo = [
