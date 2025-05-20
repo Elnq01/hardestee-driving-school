@@ -8,6 +8,14 @@ import Terminals from "./components/terminals/terminals";
 import Testimonies from "./components/testimonies/testimonies";
 import WhyChooseUs from "./components/whychooseus/whychooseus";
 import Advert from "./components/advert/advert";
+import Test from "./components/terminals/test";
+import dynamic from 'next/dynamic';
+
+// const MapView = dynamic(() => import('./components/terminals/test'), {
+//   ssr: false, // disables SSR
+// });
+
+
 
 export default function Home() {
   return (<>
@@ -18,7 +26,8 @@ export default function Home() {
     <Terminals />
     <HowItWorks />
     <Facilities />
-    <Testimonies />
+    {/* <MapView /> */}
+    {/* <Testimonies /> */}
   </>
   );
 }

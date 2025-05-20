@@ -1,6 +1,6 @@
 "use client"
 
-import Carousel from 'better-react-carousel'
+// import Carousel from 'better-react-carousel'
 import ImagePng from '../../../public/testimonies 1.jpg';
 import { Card, Row } from 'react-bootstrap';
 import FacilitiesStyle from './facilities.module.css'
@@ -10,7 +10,7 @@ export default function Facilities(){
   return (
     <Row className={FacilitiesStyle.container}>
         <h3>Facilities available on our buses</h3>
-        <Carousel 
+        {/* <Carousel 
             cols={1} 
             rows={1} 
             gap={10} 
@@ -89,7 +89,7 @@ export default function Facilities(){
                 </div>
             </div>
         </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
     </Row>
   )
 }
