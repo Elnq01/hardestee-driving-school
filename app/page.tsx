@@ -7,9 +7,11 @@ import Services from "./components/services/services";
 import Terminals from "./components/terminals/terminals";
 import Testimonies from "./components/testimonies/testimonies";
 import WhyChooseUs from "./components/whychooseus/whychooseus";
+import Advert from "./components/advert/advert";
 
 export default function Home() {
   return (<>
+    <Advert />
     <Services />
     <QuickActions />
     <WhyChooseUs />

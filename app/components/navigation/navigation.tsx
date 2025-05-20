@@ -9,7 +9,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" sticky='top' className="bg-body-tertiary">
+    <Navbar expand="lg" fixed='top' 
+      style={{background:'transparent'}}>
       <Container fluid>
         <Navbar.Brand href="#">Urban Carrier</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
