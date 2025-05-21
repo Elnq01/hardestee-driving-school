@@ -27,7 +27,7 @@ export default function Home() {
     <HowItWorks />
     <Facilities />
     {/* <MapView /> */}
-    {/* <Testimonies /> */}
+    <Testimonies />
   </>
   );
 }

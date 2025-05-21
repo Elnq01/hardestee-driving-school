@@ -1,14 +1,14 @@
 "use client"
 
-import ImageCarousel from "../../../public/bus.jpg";
 import Image from 'next/image'; 
-import {Row} from 'react-bootstrap'
+import {Row} from 'react-bootstrap';
+import AdvertStyle from './advert.module.css';
 
 
-export default function AdvertItem(){
+export default function AdvertItem({source}:any){
     return (
-        <Row style={{background:'red'}}>
-            <Image src={ImageCarousel} height={400} alt="Advert Image" />
+        <Row className={AdvertStyle.imageContainer}>
+            <Image src={source} style={{width:'100%', height:'500px'}} alt="Advert Image" />
         </Row>
     )
 }

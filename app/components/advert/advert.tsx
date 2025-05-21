@@ -1,69 +1,90 @@
 "use client"
 
 import Carousel from 'react-bootstrap/Carousel';
-// import ExampleCarouselImage from 'components/ExampleCarouselImage';
-import CarouselImage from "./AdvertItem";
-import {Button, Form, Row} from "react-bootstrap";
+import AdvertBackImage from './AdvertItem';
+import AdvertStyle from "./advert.module.css";
+import ImageCarousel1 from "../../../public/carousel 1.png";
+import ImageCarousel2 from "../../../public/carousel 2.png";
+import CustomBtn from '../UI/CustomBtn';
+import { offWhite1, primary } from '@/colors/colors';
 
 export default function Advert() {
-  return (<Row style={{position:'relative'}}>
-      <div 
-        style={{
-          position:'absolute', 
-          zIndex:'1',
-          alignSelf:'center',
-          display:'flex',
-          justifyContent:'flex-end',
-          alignItems:'center',
-          }}>
-        <Form style={{background:'white',
-          marginRight:'200px'}} className='p-2 pt-3 pb-3'>      
-            <Form.Group className='mb-3'>
-              <Form.Label>From:</Form.Label>
-              <Form.Select aria-label='Default select from'>
-                <option>Select a terminal</option>
-                <option value="iddo">Iddo Terminal</option>
-                <option value="agege">Agege Terminal</option>
-                <option value="ijora">Ijora Terminal</option>
-              </Form.Select>
-            </Form.Group>
-            <Form.Group className='mb-3'>
-              <Form.Label>To:</Form.Label>
-              <Form.Select aria-label='Default select from'>
-                <option>Select a terminal</option>
-                <option value="iddo">Iddo Terminal</option>
-                <option value="agege">Agege Terminal</option>
-                <option value="ijora">Ijora Terminal</option>
-              </Form.Select>
-            </Form.Group>
-
-            <Button type="submit">Submit</Button>
-        </Form>
-      </div>
-    <Carousel style={{background:'blue'}} controls={false}>
-      <Carousel.Item >
-        <CarouselImage />
-        {/* <Carousel.Caption style={{color:'black', position:'absolute'}}>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption> */}
-      </Carousel.Item>
+  return (
+    <Carousel controls={false} fade>
       <Carousel.Item>
-        <CarouselImage />
-        {/* <Carousel.Caption style={{color:'black'}}>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption> */}
-      </Carousel.Item>
-      {/* <Carousel.Item>
-        <CarouselImage />
-        <Carousel.Caption  style={{color:'black'}}>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <AdvertBackImage source={ImageCarousel1} />
+        <Carousel.Caption 
+          style={{
+            textAlign:'left',
+            // background:'red',
+            height:'100%',
+            display:'flex',
+            justifyContent:'center',
+            flexDirection:'column',
+            alignItems:'center',
+            rowGap:'20px'
+            }}>
+              <div 
+                style={{
+                  display:'flex',
+                  flexDirection:'column',
+                  rowGap:'5px'
+                  }}>      
+                <h6 style={{fontWeight:'bolder'}}>Grow Up your Skill</h6>
+                <h2>
+                  Learn Car  <span 
+                    style={{
+                      background:offWhite1,
+                      color:primary,
+                      padding:'5px 5px'
+                      }}>Driving</span> With Us.
+                </h2>
+              </div>
+              <CustomBtn 
+                style={{
+                  // justifySelf:'flex-start',
+                  alignSelf:'flex-start',
+                  marginLeft:'210px'
+                  }}>Explore Course</CustomBtn>
         </Carousel.Caption>
-      </Carousel.Item>  */}
+      </Carousel.Item>
+
+
+      <Carousel.Item>
+        <AdvertBackImage source={ImageCarousel2} />
+        <Carousel.Caption 
+          style={{
+            textAlign:'left',
+            // background:'red',
+            height:'100%',
+            display:'flex',
+            justifyContent:'center',
+            flexDirection:'column',
+            alignItems:'center',
+            rowGap:'20px'
+            }}>
+              <div 
+                style={{
+                  display:'flex',
+                  flexDirection:'column',
+                  rowGap:'5px'
+                  }}>    
+              <h6 style={{fontWeight:'bolder'}}>Get your Career Started with Us</h6>
+              <h2>You can <span style={{
+                      background:offWhite1,
+                      color:primary,
+                      padding:'5px 5px'
+                }}>Learn Easy</span> Car Driving Skill</h2>
+              </div>
+              <CustomBtn 
+                style={{
+                  // justifySelf:'flex-start',
+                  alignSelf:'flex-start',
+                  marginLeft:'120px'
+                  }}>Explore Course</CustomBtn>
+        </Carousel.Caption>
+
+      </Carousel.Item>
     </Carousel>
-  </Row>);
+  );
 }
