@@ -6,7 +6,8 @@ export const primaryLightDark = "#8f1f93";
 
 export const primaryMediumDark = "#6e1968";
 
-export const primaryLight = "#f4a8f4";
+// export const primaryLight = "#f4a8f4";
+export const primaryLight = "#f8daf8";
 
 
 export const offWhite1 = "#f8f8f8";

@@ -2,7 +2,7 @@
 
 import Facilities from "./components/facilities/facilities";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
-import QuickActions from "./components/quickActions/quickActions";
+import About from "./components/about/about";
 import Services from "./components/services/services";
 import Terminals from "./components/terminals/terminals";
 import Testimonies from "./components/testimonies/testimonies";
@@ -21,7 +21,7 @@ export default function Home() {
   return (<>
     <Advert />
     <Services />
-    <QuickActions />
+    <About />
     <WhyChooseUs />
     <Terminals />
     <HowItWorks />

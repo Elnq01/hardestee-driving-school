@@ -9,115 +9,96 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import ServicesStyle from './services.module.css';
-import { primary } from '@/colors/colors';
-import { CiCreditCard1, CiLight } from 'react-icons/ci';
+import { primary, primaryLight } from '@/colors/colors';
+import CustomBtn from '../UI/CustomBtn';
+import ServicesIcon from './servicesIcons';
+import CustomDesign from '../UI/customDesign';
 
+
+const ourServices = [
+    {
+        id:0,
+        title:"Get License",
+        description:'MY ride was sweet like butter'
+    },
+    {
+        id:1,
+        title:"Instructor Training",
+        description:'MY ride was sweet like butter'
+    },
+    {
+        id:2,
+        title:"Traffic Guidelines",
+        description:'MY ride was sweet like butter'
+    }, 
+    {
+        id:3,
+        title:"Learn Driving",
+        description:'MY ride was sweet like butter'
+    },
+    {
+        id:4,
+        title:"Video courses",
+        description:'MY ride was sweet like butter'
+    }
+]
 
 export default function Services(){
   return (
     <Row className={ServicesStyle.container}>
-        <h5 style={{color:primary}}>Our Services</h5>
-        <h2>Get To Know Our Services</h2>
+        <h5 className={ServicesStyle.H5} style={{color:primary}}>Our Services</h5>
+        <CustomDesign />
+        <h2 className={ServicesStyle.H2} >Get To Know Our Services</h2>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={30}
         // pagination={{
         //   clickable: true,
         // }}
-        // modules={[Pagination]}
         // className="mySwiper"
-
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         cssMode={true}
-        navigation={true}
+        // navigation={true}
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
-        <SwiperSlide>
-            <Card>
+
+        {ourServices.map(service => <SwiperSlide key={service.id} 
+        style={{paddingBottom:'10px'}}>
+            <Card className='shadow' style={{padding:'5px', border:'0px'}}>
                 <CardBody 
                 style={{
                     display:'flex', 
                     flexDirection:'column', 
                     justifyContent:'center', 
+                    rowGap:'20px',
                     alignItems:'center'}}>
-                <CiCreditCard1 size={50} />
-                    <h4>Get License</h4>
-                    <p>MY ride was sweet like butter</p>
+                    <div 
+                        style={{
+                            background:primaryLight,
+                            padding:'20px',
+                            borderRadius:'50%',
+                            // border:`2px solid ${primary}`, 
+                            // color:primary
+                            }}>
+                        <ServicesIcon type={service.title} />
+                    </div>
+                    <h4>{service.title}</h4>
+                    <p>{service.description}</p>
+                    <CustomBtn>Read More</CustomBtn>
                 </CardBody>
             </Card>
-        </SwiperSlide>
+        </SwiperSlide>)}
 
-        <SwiperSlide>
-            <div  style={{display:'flex', flexDirection:'row', background:'red'}}>
-                <div>
-                    {/* <img width={200} src={ImagePng.src} height={200} /> */}
-                </div>
-                <div>
-                    <h4>Suleiman Fatimah</h4>
-                    <p>"MY ride was sweet like butter</p>
-                </div>
-            </div>
-        </SwiperSlide>        
-        <SwiperSlide>
-            <div  style={{display:'flex', flexDirection:'row', background:'red'}}>
-                <div>
-                    {/* <img width={200} src={ImagePng.src} height={200} /> */}
-                </div>
-                <div>
-                    <h4>Suleiman Fatimah</h4>
-                    <p>"MY ride was sweet like butter</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div  style={{display:'flex', flexDirection:'row', background:'red'}}>
-                <div>
-                    {/* <img width={200} src={ImagePng.src} height={200} /> */}
-                </div>
-                <div>
-                    <h4>Suleiman Fatimah</h4>
-                    <p>"MY ride was sweet like butter</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div  style={{display:'flex', flexDirection:'row', background:'red'}}>
-                <div>
-                    {/* <img width={200} src={ImagePng.src} height={200} /> */}
-                </div>
-                <div>
-                    <h4>Suleiman Fatimah</h4>
-                    <p>"MY ride was sweet like butter</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div  style={{display:'flex', flexDirection:'row', background:'red'}}>
-                <div>
-                    {/* <img width={200} src={ImagePng.src} height={200} /> */}
-                </div>
-                <div>
-                    <h4>Suleiman Fatimah</h4>
-                    <p>"MY ride was sweet like butter</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div  style={{display:'flex', flexDirection:'row', background:'red'}}>
-                <div>
-                    {/* <img width={200} src={ImagePng.src} height={200} /> */}
-                </div>
-                <div>
-                    <h4>Suleiman Fatimah</h4>
-                    <p>"MY ride was sweet like butter</p>
-                </div>
-            </div>
-        </SwiperSlide>
+
       </Swiper>
 
       </Row>

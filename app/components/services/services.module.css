@@ -1,13 +1,16 @@
 .container{
-    height: 300px;
-    padding: 30px 50px;
-    padding-bottom: 40px;
+    /* height: 300px; */
+    padding: 90px 50px;
+    padding-bottom: 50px;
     
 }
 
-.H1{
-    /* text-align: center; */
-    margin: 20px auto;
+.H5{
+    /* margin: 20px auto; */
+}
+
+.H2{
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
