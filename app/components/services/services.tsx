@@ -15,6 +15,7 @@ import { primary, primaryLight } from '@/colors/colors';
 import CustomBtn from '../UI/CustomBtn';
 import ServicesIcon from './servicesIcons';
 import CustomDesign from '../UI/customDesign';
+import CustomBtn2 from '../UI/custombtn2';
 
 
 const ourServices = [
@@ -93,7 +94,7 @@ export default function Services(){
                     </div>
                     <h4>{service.title}</h4>
                     <p>{service.description}</p>
-                    <CustomBtn>Read More</CustomBtn>
+                    <CustomBtn2>Read More</CustomBtn2>
                 </CardBody>
             </Card>
         </SwiperSlide>)}

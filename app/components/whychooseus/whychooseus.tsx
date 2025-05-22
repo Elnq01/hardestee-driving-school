@@ -2,11 +2,14 @@
 
 import { Accordion, Row } from "react-bootstrap";
 import whychooseusStyles from "./whychooseus.module.css";
+import { primary } from "@/colors/colors";
 
 export default function WhyChooseUs(){
     return (
         <Row className={whychooseusStyles.container}>
-            <h3>Why Choose Urban Carrier</h3>
+        <h5 className={whychooseusStyles.H5} style={{color:primary}}>Why Choose Urban Carrier</h5>
+        {/* <CustomDesign /> */}
+        <h2 className={whychooseusStyles.H2} >Get To Know Our Services</h2>
 
             <Accordion>
                 <Accordion.Item eventKey="0">
