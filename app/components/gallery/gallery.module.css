@@ -1,12 +1,14 @@
+
 .container{
     /* height: 300px; */
     padding: 90px 50px;
     padding-bottom: 50px;
-    
+    background:#2d2d2d;
 }
 
 .H5{
     /* margin: 20px auto; */
+    text-align: center;
 }
 
 .H2{
@@ -24,4 +26,8 @@
 .bodyP{
     margin-bottom: 0px;
     background-color: aqua;
+}
+
+.tabActiveHover{
+    border-bottom: 3px solid #e421e6;
 }

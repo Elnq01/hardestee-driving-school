@@ -6,12 +6,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
 // import required modules
-import { EffectCoverflow, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-import TestimoniesStyle from './testimonies.module.css';
+import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import TutorsStyle from './tutors.module.css';
 import { primary, primaryLight } from '@/colors/colors';
 import CustomDesign from '../UI/customDesign';
 import CustomBtn2 from '../UI/custombtn2';
@@ -47,39 +46,33 @@ const ourServices = [
 
 export default function Tutors(){
   return (
-    <Row className={TestimoniesStyle.container}>
-        <h5 className={TestimoniesStyle.H5} style={{color:primary}}>Testimonials</h5>
+    <Row className={TutorsStyle.container}>
+        <h5 className={TutorsStyle.H5} style={{color:primary}}>Our Best Instructor</h5>
         <CustomDesign />
-        <h2 className={TestimoniesStyle.H2} >What Saying Students Feedback</h2>
+        <h2 className={TutorsStyle.H2} >Meet Our Qualified Instructor</h2>
       <Swiper
-        // slidesPerView={4}
-        // spaceBetween={30}
-        // cssMode={true}
-        // pagination={true}
-        // mousewheel={true}
-        // keyboard={true}
-        // modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
-
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
         slidesPerView={4}
-        // slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        spaceBetween={30}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
+        cssMode={true}
+        // navigation={true}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
 
         {ourServices.map(service => <SwiperSlide key={service.id} 
         style={{paddingBottom:'10px'}}>
-            <Card style={{padding:'5px', border:'0px'}}>
+            <Card className='shadow' style={{padding:'5px', border:'0px'}}>
                 <CardBody 
                 style={{
                     display:'flex', 
@@ -87,7 +80,7 @@ export default function Tutors(){
                     justifyContent:'center', 
                     rowGap:'20px',
                     alignItems:'center'}}>
-                    <div
+                    <div 
                         style={{
                             background:primaryLight,
                             padding:'20px',

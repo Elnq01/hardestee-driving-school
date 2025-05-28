@@ -7,6 +7,6 @@ export default function CustomBtn2({onClick, children, style}:any){
 
 
     return (
-        <Button className={BtnStyle2.container} style={{...style}} onClick={onClick}>{children}</Button>
+        <Button className={`shadow-sm ${BtnStyle2.container}`} style={{...style}} onClick={onClick}>{children}</Button>
     )
 }

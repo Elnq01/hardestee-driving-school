@@ -4,15 +4,16 @@ import Facilities from "./components/facilities/facilities";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import About from "./components/about/about";
 import Services from "./components/services/services";
-import Terminals from "./components/terminals/terminals";
 import Testimonies from "./components/testimonies/testimonies";
 import WhyChooseUs from "./components/whychooseus/whychooseus";
 import Advert from "./components/advert/advert";
-import Test from "./components/terminals/test";
 import dynamic from 'next/dynamic';
 import Courses from "./components/courses/courses";
+import Tutors from "./components/tutors/tutors";
+import Gallery from "./components/gallery/gallery";
+import Location from "./components/location/location";
 
-const MapView = dynamic(() => import('./components/terminals/test'), {
+const MapView = dynamic(() => import('./components/location/location'), {
   ssr: false, // disables SSR
 });
 
@@ -25,11 +26,15 @@ export default function Home() {
     <About />
     <Courses />
     <WhyChooseUs />
-    <Terminals />
-    <HowItWorks />
-    <Facilities />
+    <Tutors />
+    <Gallery />
+
+    {/* // <Terminals />
+    // <HowItWorks />
+    // <Facilities /> */}
     {/* <MapView /> */}
     <Testimonies />
+    <Location />
   </>
   );
 }

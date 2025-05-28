@@ -1,6 +1,7 @@
 .container{
-    background:#fafafa;
+    background:transparent;
     color:#2d2d2d;
+    /* color: white; */
     border:0px;
     border-bottom:3px solid #e421e6;
     font-weight:bolder;

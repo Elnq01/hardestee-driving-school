@@ -8,7 +8,7 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 
 const position: LatLngExpression = [51.505, -0.09];
 
-export default function MapView() {
+export default function Location() {
   return (
     <MapContainer center={position} zoom={13} scrollWheelZoom={false} 
     style={{ height: '300px', width: '100%' }}>

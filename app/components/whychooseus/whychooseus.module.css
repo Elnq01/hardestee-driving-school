@@ -1,11 +1,52 @@
 .container{
-    padding: 20px;
-}.container{
+    /* padding: 20px; */
     /* height: 300px; */
-    padding: 90px 50px;
+    /* padding: 70px 50px; */
     padding-bottom: 50px;
+    padding-top: 70px;
+    position:relative;
+  background-image: url('../../../public/whyus');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
     
 }
+
+.containerWhyChoose{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* filter: blur(5px) brightness(0.7); */
+  /* z-index: 0; */
+}
+
+.colum1{
+  z-index: 100;
+  padding:20px 30px;
+  padding-left:70px;
+  color:#fafafa;
+}
+
+.colum2{
+  z-index: 100;
+  padding:20px 30px;
+  padding-right:70px;
+  color:#fafafa;
+}
+
+.form{
+  padding:30px 40px;
+  color:#fafafa;
+  border-radius:10px;
+  background-color: rgb(255, 255, 255, 0.13);
+}
+
 
 .H5{
     /* margin: 20px auto; */

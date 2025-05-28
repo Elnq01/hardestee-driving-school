@@ -19,6 +19,11 @@ p{
   font-size: 16px;
 }
 
+.accordion-button{
+  background-color: transparent;
+  
+}
+
 h2{
   font-weight:bolder;
   font-size:42px;

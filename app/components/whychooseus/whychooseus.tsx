@@ -1,63 +1,117 @@
 "use client"
 
-import { Accordion, Row } from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
 import whychooseusStyles from "./whychooseus.module.css";
-import { primary } from "@/colors/colors";
+import { offWhite2, primary } from "@/colors/colors";
 
-export default function WhyChooseUs(){
-    return (
+
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { FaCaretDown, FaUpDown } from "react-icons/fa6";
+import CustomBtn2 from "../UI/custombtn2";
+import { useState } from "react";
+
+
+
+const whyChooseUsinfo = [
+    {
+        id:"0",
+        title:"Affordable Fee",
+        description:'All of our course fee are very affordable for everyone.'
+    },
+    {
+        id:"1",
+        title:"Online Tracking",
+        description:'Online tracking is the process of gathering information.'
+    },
+    {
+        id:"2",
+        title:"Best Trainers",
+        description:'We have the best trainers form helping you always.'
+    },
+    {
+        id:"3",
+        title:"Perfect Timing",
+        description:"Our course is neither so long nor so short it's perfect."
+    },
+    
+]
+
+
+export default function WhyChooseUs() {
+
+  const [accordionIndex, setAccordionIndex] = useState(null);
+  
+  return (
         <Row className={whychooseusStyles.container}>
-        <h5 className={whychooseusStyles.H5} style={{color:primary}}>Why Choose Urban Carrier</h5>
-        {/* <CustomDesign /> */}
-        <h2 className={whychooseusStyles.H2} >Get To Know Our Services</h2>
+       {/* <div className={whychooseusStyles.containerWhyChoose}></div> */}
+      
+      <Col md={6} xl={6} xxl={6} className={whychooseusStyles.colum1}>
+        <h2 style={{margin:'40px auto'}}>Why Choose Us</h2>
+        {whyChooseUsinfo.map((info, index) => <Disclosure key={info.id} as="div" 
+        className="p-6" 
+        style={{
+            background:'rgba(255, 255, 255, 0.13)',
+            borderRadius:'10px',
+            marginBottom:'10px'
+        }} 
+        defaultOpen={false}>
+          
+             {({ open }) => {
+              const isOpen = accordionIndex === index;
 
-            <Accordion>
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                        Luxury Seating
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        Luxury seating that is goohfjflkjhgjkgjgkkj
-                        dfhjfkjfhkfhjkfhfjkffgjkhgkjhgkjgh
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                    <Accordion.Header>
-                        Real-time parcel tracking
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        Luxury seating that is goohfjflkjhgjkgjgkkj
-                        dfhjfkjfhkfhjkfhfjkffgjkhgkjhgkjgh
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="2">
-                    <Accordion.Header>
-                        Affordable Pricing
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        Luxury seating that is goohfjflkjhgjkgjgkkj
-                        dfhjfkjfhkfhjkfhfjkffgjkhgkjhgkjgh
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3">
-                    <Accordion.Header>
-                        Affordable Pricing
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        Luxury seating that is goohfjflkjhgjkgjgkkj
-                        dfhjfkjfhkfhjkfhfjkffgjkhgkjhgkjgh
-                    </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="4">
-                    <Accordion.Header>
-                        One-time Guarantee
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        Luxury seating that is goohfjflkjhgjkgjgkkj
-                        dfhjfkjfhkfhjkfhfjkffgjkhgkjhgkjgh
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-        </Row>
-    )
+             
+             return (
+                <>
+                  <DisclosureButton 
+                    className="group flex w-full items-center justify-between"
+                    onClick={() =>
+                    setAccordionIndex(isOpen ? null : index)
+                    }
+                    >
+                    <span className="text-sm/6 font-medium text-white group-data-hover:text-white/80">
+                    {info.title}
+                    </span>
+                    <FaCaretDown className="w-5 group-data-open:rotate-180" color={primary} /> 
+                  </DisclosureButton>
+        
+                  {isOpen && (<DisclosurePanel
+                      transition
+                      className="origin-top transition duration-200 ease-out data-closed:-translate-y-6 data-closed:opacity-0"
+                    >
+                      {info.description}
+                    </DisclosurePanel>)}
+
+                </>)}}
+                
+            </Disclosure>)}
+      </Col>
+
+    <Col md={6} xl={6} xxl={6} className={whychooseusStyles.colum2}>
+      <Form className={whychooseusStyles.form}>
+        <h3 style={{textAlign:'center'}}>Ask Any Question</h3>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter your name" />
+        </Form.Group>      
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Phone</Form.Label>
+          <Form.Control type="tel" placeholder="Enter phone number" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Enter your inquiry</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <CustomBtn2 
+          style={{
+            color:offWhite2,
+            background:"rgba(255, 255, 255, 0.14)"
+            }}>Submit</CustomBtn2>
+      </Form>
+    </Col>
+    </Row>
+  )
 }
