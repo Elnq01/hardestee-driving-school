@@ -25,3 +25,9 @@
     margin-bottom: 0px;
     background-color: aqua;
 }
+
+.tutorCard{
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+}

@@ -1,17 +1,26 @@
 .container{
     /* height: 300px; */
-    padding: 90px 50px;
-    padding-bottom: 50px;
-    
+    /* padding: 90px 50px; */
+    /* padding-bottom: 50px; */
+    /* padding-top: 90px; */
+    background-image: url('../../../public/testimonial.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .H5{
     /* margin: 20px auto; */
+    /* margin-left: 50px; */
 }
 
 .H2{
     margin-top: 20px;
+    /* padding: 90px 50px; */
+    /* margin-left: 50px; */
     margin-bottom: 40px;
+    /* color:whitesmoke; */
 }
 
 .body{

@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardBody, Row } from 'react-bootstrap';
+import { Card, CardBody, Col, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -10,98 +10,111 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
 // import required modules
-import { EffectCoverflow, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+
 import TestimoniesStyle from './testimonies.module.css';
-import { primary, primaryLight } from '@/colors/colors';
+import { offWhite2, primary, primaryLight } from '@/colors/colors';
 import CustomDesign from '../UI/customDesign';
 import CustomBtn2 from '../UI/custombtn2';
-
+import Image from 'next/image';
+import ImgSrc from '../../../public/carousel 1.png';
+import TestimonyRating from './rating';
 
 const ourServices = [
     {
         id:0,
         title:"Get License",
-        description:'MY ride was sweet like butter'
+        description:'My ride was sweet like butter'
     },
     {
         id:1,
         title:"Instructor Training",
-        description:'MY ride was sweet like butter'
+        description:'My ride was sweet like butter'
     },
     {
         id:2,
         title:"Traffic Guidelines",
-        description:'MY ride was sweet like butter'
+        description:'My ride was sweet like butter'
     }, 
     {
         id:3,
         title:"Learn Driving",
-        description:'MY ride was sweet like butter'
+        description:'My ride was sweet like butter'
     },
     {
         id:4,
         title:"Video courses",
-        description:'MY ride was sweet like butter'
+        description:'My ride was sweet like butter'
     }
 ]
 
 export default function Tutors(){
   return (
     <Row className={TestimoniesStyle.container}>
-        <h5 className={TestimoniesStyle.H5} style={{color:primary}}>Testimonials</h5>
-        <CustomDesign />
-        <h2 className={TestimoniesStyle.H2} >What Saying Students Feedback</h2>
+        <div style={{position:'absolute', width:'100%', height:'100%', background:'rgba(255,255,255,0.5)'}}></div>
+        <div style={{marginLeft:'50px', zIndex:'100', marginTop:'90px'}}>    
+            <h5 className={TestimoniesStyle.H5} style={{color:primary}}>Testimonials</h5>
+            <CustomDesign />
+            <h2 className={TestimoniesStyle.H2} >What Saying Students Feedback</h2>
+        </div>
       <Swiper
-        // slidesPerView={4}
-        // spaceBetween={30}
-        // cssMode={true}
-        // pagination={true}
-        // mousewheel={true}
-        // keyboard={true}
-        // modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
 
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={4}
-        // slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        style={{marginBottom:'70px'}}
+
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
+        cssMode={true}
+        // navigation={true}
+        slidesPerView={4}
+        // spaceBetween={30}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
 
         {ourServices.map(service => <SwiperSlide key={service.id} 
         style={{paddingBottom:'10px'}}>
-            <Card style={{padding:'5px', border:'0px'}}>
-                <CardBody 
+            <Col md={3} lg={3} xl={3} xxl={3} 
                 style={{
                     display:'flex', 
                     flexDirection:'column', 
+                    textAlign:'center', 
                     justifyContent:'center', 
-                    rowGap:'20px',
-                    alignItems:'center'}}>
-                    <div
+                    alignItems:'center',
+                    // background:'red',
+                    width:'100%',
+                    }}>
+                <div style={{padding:'50px 80px'}}>
+                    <img 
                         style={{
-                            background:primaryLight,
-                            padding:'20px',
-                            borderRadius:'50%',
-                            // border:`2px solid ${primary}`, 
-                            // color:primary
+                            width:'150px',
+                            height:'150px',
+                            borderRadius:'50%', 
+                            border:`5px solid ${primary}`
+                        }}
+                        src={ImgSrc.src} 
+                        alt='avatar testimony' />
+                </div>
+                <div>
+                    <TestimonyRating value={5} />
+                    <h6>Solomon Kane</h6>
+                    <p>GRAPHIC DESIGNER</p>
+                    <p 
+                        style={{
+                            fontStyle:'italic', 
+                            fontWeight:'bold', 
+                            fontSize:'18px',
+                            // color:offWhite2
                             }}>
-                        {/* <ServicesIcon type={service.title} /> */}
-                    </div>
-                    <h4>{service.title}</h4>
-                    <p>{service.description}</p>
-                    <CustomBtn2>Read More</CustomBtn2>
-                </CardBody>
-            </Card>
+                        "{service.description}"
+                    </p>
+                </div>
+
+            </Col>
         </SwiperSlide>)}
 
 
@@ -110,3 +123,6 @@ export default function Tutors(){
       </Row>
   );
 }
+
+
+

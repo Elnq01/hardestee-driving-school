@@ -10,8 +10,24 @@ import { charcoalGray1, charcoalGray2, offWhite1, offWhite2, primary } from '@/c
 import { CiFacebook, CiInboxOut, CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci';
 import { FaLetterboxd } from 'react-icons/fa6';
 import { FaEnvelope, FaPhone, FaPhoneAlt } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
 function NavScrollExample() {
+  const [navbarscrollStyle, setNavberscroll] = useState(charcoalGray2);
+
+  useEffect(()=>{
+    const scrollHandler = () => {
+      if(window.scrollY > 100){
+        setNavberscroll("rgba(0,0,0,0.4)")
+      }else{
+        setNavberscroll(charcoalGray2)
+      }
+    }
+    window.addEventListener('scroll', scrollHandler)
+
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [])
+
   return (<>
       <Navbar style={{background:offWhite2}}>
         <Container>
@@ -67,7 +83,7 @@ function NavScrollExample() {
         </Container>
       </Navbar>
     <Navbar expand="lg" sticky='top' 
-      style={{background:charcoalGray2}}>
+      style={{background:navbarscrollStyle}}>
       <Container fluid>
         <Navbar.Brand className='ml-5' href="#">
           <Image src={Logo} alt='Logo' height={40} width={40}/>
