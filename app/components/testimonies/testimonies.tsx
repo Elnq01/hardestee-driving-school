@@ -70,8 +70,8 @@ export default function Tutors(){
         slidesPerView={4}
         // spaceBetween={30}
         pagination={true}
-        mousewheel={true}
-        keyboard={true}
+        // mousewheel={true}
+        // keyboard={true}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >

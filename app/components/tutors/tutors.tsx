@@ -63,8 +63,8 @@ export default function Tutors(){
         cssMode={true}
         // navigation={true}
         pagination={true}
-        mousewheel={true}
-        keyboard={true}
+        // mousewheel={true}
+        // keyboard={true}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >

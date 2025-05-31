@@ -1,0 +1,33 @@
+.container{
+    /* height: 300px; */
+    /* padding: 90px 50px; */
+    padding-top: 90px;
+    padding-bottom: 50px;
+    
+}
+
+.header{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.H5{
+    /* margin: 20px auto; */
+}
+
+.H2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.bodyP{
+    margin-bottom: 0px;
+    background-color: aqua;
+}

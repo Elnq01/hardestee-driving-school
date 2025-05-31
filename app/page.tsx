@@ -26,11 +26,11 @@ export default function Home() {
     <About />
     <Courses />
     <WhyChooseUs />
+    <HowItWorks />
     <Tutors />
     <Gallery />
 
     {/* // <Terminals />
-    // <HowItWorks />
     // <Facilities /> */}
     {/* <MapView /> */}
     <Testimonies />

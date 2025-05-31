@@ -66,8 +66,8 @@ export default function Services(){
         cssMode={true}
         // navigation={true}
         pagination={true}
-        mousewheel={true}
-        keyboard={true}
+        // mousewheel={true}
+        // keyboard={true}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
