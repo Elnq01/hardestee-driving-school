@@ -20,14 +20,6 @@
     margin-bottom: 40px;
 }
 
-.body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-}
-
-.bodyP{
-    margin-bottom: 0px;
-    background-color: aqua;
+.videoContainer{
+    position: relative;
 }

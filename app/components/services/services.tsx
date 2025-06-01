@@ -11,11 +11,12 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import ServicesStyle from './services.module.css';
-import { primary, primaryLight } from '@/colors/colors';
+import { charcoalGray2, primary, primaryLight } from '@/colors/colors';
 import CustomBtn from '../UI/CustomBtn';
 import ServicesIcon from './servicesIcons';
 import CustomDesign from '../UI/customDesign';
 import CustomBtn2 from '../UI/custombtn2';
+import HeaderDesign from '../UI/headerDesign';
 
 
 const ourServices = [
@@ -49,8 +50,8 @@ const ourServices = [
 export default function Services(){
   return (
     <Row className={ServicesStyle.container}>
-        <h5 className={ServicesStyle.H5} style={{color:primary}}>Our Services</h5>
-        <CustomDesign />
+        <HeaderDesign text1="Our" text2="Services"/>
+        {/* <CustomDesign /> */}
         <h2 className={ServicesStyle.H2} >Get To Know Our Services</h2>
       <Swiper
         slidesPerView={4}
@@ -65,7 +66,7 @@ export default function Services(){
         }}
         cssMode={true}
         // navigation={true}
-        pagination={true}
+        // pagination={true}
         // mousewheel={true}
         // keyboard={true}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
@@ -93,7 +94,7 @@ export default function Services(){
                         <ServicesIcon type={service.title} />
                     </div>
                     <h4>{service.title}</h4>
-                    <p>{service.description}</p>
+                    <p style={{color:"#74757B"}}>{service.description}</p>
                     <CustomBtn2>Read More</CustomBtn2>
                 </CardBody>
             </Card>

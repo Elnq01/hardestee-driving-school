@@ -19,6 +19,7 @@ import CustomBtn2 from '../UI/custombtn2';
 import Image from 'next/image';
 import ImgSrc from '../../../public/carousel 1.png';
 import TestimonyRating from './rating';
+import HeaderDesign from '../UI/headerDesign';
 
 const ourServices = [
     {
@@ -53,8 +54,8 @@ export default function Tutors(){
     <Row className={TestimoniesStyle.container}>
         <div style={{position:'absolute', width:'100%', height:'100%', background:'rgba(255,255,255,0.5)'}}></div>
         <div style={{marginLeft:'50px', zIndex:'100', marginTop:'90px'}}>    
-            <h5 className={TestimoniesStyle.H5} style={{color:primary}}>Testimonials</h5>
-            <CustomDesign />
+            {/* <HeaderDesign text1="Our" text2="Testimonies"/> */}
+            {/* <CustomDesign /> */}
             <h2 className={TestimoniesStyle.H2} >What Saying Students Feedback</h2>
         </div>
       <Swiper
@@ -93,8 +94,9 @@ export default function Tutors(){
                         style={{
                             width:'150px',
                             height:'150px',
-                            borderRadius:'50%', 
-                            border:`5px solid ${primary}`
+                            borderRadius:'50%',
+                            padding:'6px', 
+                            border:`2px solid ${primary}`
                         }}
                         src={ImgSrc.src} 
                         alt='avatar testimony' />

@@ -9,6 +9,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { FaCaretDown, FaUpDown } from "react-icons/fa6";
 import CustomBtn2 from "../UI/custombtn2";
 import { useState } from "react";
+import CustomBtn from "../UI/CustomBtn";
 
 
 
@@ -105,11 +106,11 @@ export default function WhyChooseUs() {
           <Form.Label>Enter your inquiry</Form.Label>
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
-        <CustomBtn2 
+        <CustomBtn 
           style={{
-            color:offWhite2,
-            background:"rgba(255, 255, 255, 0.14)"
-            }}>Submit</CustomBtn2>
+            // color:offWhite2,
+            // background:"rgba(255, 255, 255, 0.14)"
+            }}>Submit</CustomBtn>
       </Form>
     </Col>
     </Row>

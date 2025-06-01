@@ -1,12 +1,15 @@
 import { Button } from "react-bootstrap";
-import {charcoalGray1, offWhite2, primary, warmGray1} from "../../../colors/colors";
 import BtnStyle2 from './custombtn2.module.css';
+import { FaArrowRight } from "react-icons/fa6";
 
 
 export default function CustomBtn2({onClick, children, style}:any){
 
 
     return (
-        <Button className={`shadow-sm ${BtnStyle2.container}`} style={{...style}} onClick={onClick}>{children}</Button>
+        <Button className={` ${BtnStyle2.container}`} style={{...style}} onClick={onClick}>
+            {children}
+            <FaArrowRight />
+        </Button>
     )
 }

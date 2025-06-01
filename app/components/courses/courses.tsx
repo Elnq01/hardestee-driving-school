@@ -19,6 +19,7 @@ import CourseImage from '../../../public/bus.jpg';
 import CustomBtn2 from '../UI/custombtn2';
 import { CiTimer } from 'react-icons/ci';
 import Image from 'next/image';
+import HeaderDesign from '../UI/headerDesign';
 
 
 const ourServices = [
@@ -44,8 +45,8 @@ const ourServices = [
 export default function Courses(){
   return (
     <Row className={CoursesStyle.container}>
-        <h5 className={CoursesStyle.H5} style={{color:primary}}>Our Courses</h5>
-        <CustomDesign />
+        <HeaderDesign text1="Our" text2="Courses"/>        
+        {/* <CustomDesign /> */}
 
         <Row style={{marginBottom:'30px'}}>    
             <Col md={6} xl={6} xxl={6}>
@@ -96,8 +97,8 @@ export default function Courses(){
                     // alignItems:'center'
                     }}>
                     <Card.Title style={{fontWeight:'bold'}}>{service.title}</Card.Title>
-                    <p>{service.description}</p>
-                    <CustomBtn2 style={{width:'180px', alignSelf:"center"}}>View Course Details</CustomBtn2>
+                    <p style={{color:"#74757B"}}>{service.description}</p>
+                    <CustomBtn2 style={{alignSelf:"center"}}>View Course Details</CustomBtn2>
                 </CardBody>
                 <Card.Footer style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}
                 >

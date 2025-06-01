@@ -17,6 +17,7 @@ import CustomBtn2 from '../UI/custombtn2';
 import Image from 'next/image';
 import ImgSrc from '../../../public/tutor 1.jpg';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
+import HeaderDesign from '../UI/headerDesign';
 
 
 const ourServices = [
@@ -50,8 +51,9 @@ const ourServices = [
 export default function Tutors(){
   return (
     <Row className={TutorsStyle.container}>
-        <h5 className={TutorsStyle.H5} style={{color:primary}}>Our Best Instructor</h5>
-        <CustomDesign />
+        {/* <h5 className={TutorsStyle.H5} style={{color:primary}}>Our Best Instructor</h5> */}
+        <HeaderDesign text1="Our" text2="Tutors"/>
+        {/* <CustomDesign /> */}
         <h2 className={TutorsStyle.H2} >Meet Our Qualified Instructor</h2>
       <Swiper
         slidesPerView={4}
@@ -73,7 +75,8 @@ export default function Tutors(){
         style={{paddingBottom:'70px'}}>
 
             <Col className={TutorsStyle.tutorCard} md={3} xl={3} xxl={3}>
-                <Image src={ImgSrc} alt="Img Bkg" style={{width:'100%', height:'100%'}} />
+                <Image src={ImgSrc} alt="Img Bkg" 
+                    style={{width:'100%', height:'100%', borderRadius:'10px'}} />
                 <div 
                     style={{
                         position:'absolute', 
@@ -84,39 +87,40 @@ export default function Tutors(){
                         bottom:'-20px',
                         right:'-20px',
                         zIndex:'-100',
-                        clipPath: "polygon(0 0, 90% 0, 100% 10%, 100% 100%, 15% 115%, 0 85%)"
+                        clipPath: "polygon(0 0, 90% 0, 100% 10%, 100% 100%, 15% 115%, 0 85%)",
+                        borderBottomRightRadius:'10px'
                         }}>
                             <div style={{
-                                background:offWhite2,
-                                height:'25px',
+                                border:`1px solid ${offWhite2}`,
+                                height:'10px',
                                 width:'10px', 
                                 position:'absolute', 
                                 bottom:'10px',
-                                left:'20px',
-                                transform:'skewX(30deg)',
+                                right:'20px',
+                                // transform:'skewX(30deg)',
                                 }}>
                             </div>
                             <div style={{
                                 background:offWhite2,
-                                height:'25px',
+                                height:'10px',
                                 width:'10px', 
                                 position:'absolute', 
                                 bottom:'10px',
-                                left:'40px',                                
-                                transform:'skewX(30deg)',
+                                right:'40px',                                
+                                // transform:'skewX(30deg)',
 
                                 }}>
                             </div>
-                            <div style={{
+                            {/* <div style={{
                                 border:`1px solid ${offWhite2}`,
-                                height:'25px',
+                                height:'10px',
                                 width:'10px', 
                                 position:'absolute', 
                                 bottom:'10px',
-                                transform:'skewX(30deg)',
-                                left:'60px',
+                                // transform:'skewX(30deg)',
+                                right:'60px',
                                 }}>
-                            </div>
+                            </div> */}
                         </div>
                 <div style={{
                     background:primaryLight, 

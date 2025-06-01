@@ -26,9 +26,9 @@ export default function Home() {
     <About />
     <Courses />
     <WhyChooseUs />
-    <HowItWorks />
     <Tutors />
     <Gallery />
+    <HowItWorks />
 
     {/* // <Terminals />
     // <Facilities /> */}
