@@ -49,12 +49,12 @@ export default function Courses(){
         {/* <CustomDesign /> */}
 
         <Row style={{marginBottom:'30px'}}>    
-            <Col md={6} xl={6} xxl={6}>
+            <Col xs={12} sm={12} md={12} xl={6} xxl={6} lg={6}>
                 <h2 className={CoursesStyle.H2} >
                     Our Educational Driving Courses For All Ages
                 </h2>
             </Col>
-            <Col md={6} xl={6} xxl={6} style={{padding:'30px 20px', textAlign:'justify'}}>
+            <Col xs={12} sm={12} md={12} xl={6} xxl={6} lg={6} style={{padding:'30px 20px', textAlign:'justify'}}>
                 <p>
                 Our training courses help people of all ages to acquire
                 licensed the experience aute irure dolor incly reprehend

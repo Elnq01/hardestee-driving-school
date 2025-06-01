@@ -20,31 +20,31 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
 import HeaderDesign from '../UI/headerDesign';
 
 
-const ourServices = [
+const ourTutors = [
     {
         id:0,
-        title:"Get License",
-        description:'MY ride was sweet like butter'
+        title:"Instructor",
+        name:'Adewale Joshua'
     },
     {
         id:1,
-        title:"Instructor Training",
-        description:'MY ride was sweet like butter'
+        title:"Senior Instructor",
+        name:'Ogundele Semilogo'
     },
     {
         id:2,
-        title:"Traffic Guidelines",
-        description:'MY ride was sweet like butter'
+        title:"Instructor",
+        name:'Bello Micheal'
     }, 
     {
         id:3,
-        title:"Learn Driving",
-        description:'MY ride was sweet like butter'
+        title:"CEO, of Founder",
+        name:'Oyebola Oyebisi'
     },
     {
         id:4,
-        title:"Video courses",
-        description:'MY ride was sweet like butter'
+        title:"Instructor",
+        name:'Oluwole Ayodeji'
     }
 ]
 
@@ -64,76 +64,27 @@ export default function Tutors(){
         }}
         cssMode={true}
         // navigation={true}
-        pagination={true}
+        // pagination={true}
         // mousewheel={true}
         // keyboard={true}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
 
-        {ourServices.map(service => <SwiperSlide key={service.id} 
+        {ourTutors.map(tutor => <SwiperSlide key={tutor.id} 
         style={{paddingBottom:'70px'}}>
 
             <Col className={TutorsStyle.tutorCard} md={3} xl={3} xxl={3}>
                 <Image src={ImgSrc} alt="Img Bkg" 
                     style={{width:'100%', height:'100%', borderRadius:'10px'}} />
-                <div 
-                    style={{
-                        position:'absolute', 
-                        background:charcoalGray2,
-                        // background:primaryLightDark,
-                        width:'100%',
-                        height:'100%',
-                        bottom:'-20px',
-                        right:'-20px',
-                        zIndex:'-100',
-                        clipPath: "polygon(0 0, 90% 0, 100% 10%, 100% 100%, 15% 115%, 0 85%)",
-                        borderBottomRightRadius:'10px'
-                        }}>
-                            <div style={{
-                                border:`1px solid ${offWhite2}`,
-                                height:'10px',
-                                width:'10px', 
-                                position:'absolute', 
-                                bottom:'10px',
-                                right:'20px',
-                                // transform:'skewX(30deg)',
-                                }}>
-                            </div>
-                            <div style={{
-                                background:offWhite2,
-                                height:'10px',
-                                width:'10px', 
-                                position:'absolute', 
-                                bottom:'10px',
-                                right:'40px',                                
-                                // transform:'skewX(30deg)',
-
-                                }}>
-                            </div>
-                            {/* <div style={{
-                                border:`1px solid ${offWhite2}`,
-                                height:'10px',
-                                width:'10px', 
-                                position:'absolute', 
-                                bottom:'10px',
-                                // transform:'skewX(30deg)',
-                                right:'60px',
-                                }}>
-                            </div> */}
-                        </div>
                 <div style={{
-                    background:primaryLight, 
-                    // background:offWhite2, 
-                    position:'absolute', 
                     bottom:'50px',
                     left:'30px',
-                    textAlign:'center',
                     padding:'5px',
                     borderRadius:'2px'
                     }}>
-                        <h4>Alvert Tine</h4>
-                        <p style={{color:primary}}>Instructor</p>
+                        <p style={{color:primary}}>{tutor.title}</p>
+                        <h4>{tutor.name}</h4>
                 </div>
 
                 <div style={{

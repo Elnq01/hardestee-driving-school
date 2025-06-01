@@ -5,12 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavStyle from "./navigation.module.css";
 import Image from 'next/image';
-import Logo from "../../../public/hardestee_driving_school-removebg-preview.png";
 import { charcoalGray1, charcoalGray2, offWhite1, offWhite2, primary } from '@/colors/colors';
 import { CiFacebook, CiInboxOut, CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci';
 import { FaLetterboxd } from 'react-icons/fa6';
 import { FaEnvelope, FaPhone, FaPhoneAlt } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
+import Logo from '../UI/Logo';
 
 function NavScrollExample() {
   const [navbarscrollStyle, setNavberscroll] = useState(charcoalGray2);
@@ -86,7 +86,7 @@ function NavScrollExample() {
       style={{background:navbarscrollStyle}}>
       <Container fluid>
         <Navbar.Brand className='ml-5' href="#">
-          <Image src={Logo} alt='Logo' height={40} width={40}/>
+          <Logo height={70} width={70} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll"> 

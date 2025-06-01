@@ -16,7 +16,7 @@ const position: LatLngExpression = [51.505, -0.09];
 export default function Location() {
   return (    
   <Row className={locationStyles.container}>   
-          <h5 className={locationStyles.H5} style={{color:primary}}>Our Location</h5>
+          {/* <h5 className={locationStyles.H5} style={{color:primary}}>Our Location</h5> */}
           <HeaderDesign text1="Our" text2="Location"/>
           {/* <CustomDesign /> */}
           <h2 className={locationStyles.H2} >Where we are?</h2>

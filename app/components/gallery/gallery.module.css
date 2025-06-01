@@ -1,14 +1,16 @@
 
 .container{
     /* height: 300px; */
-    padding: 90px 50px;
+    /* padding: 90px 50px; */
     padding-bottom: 50px;
-    background:#2d2d2d;
+    position: relative;
 }
 
 .H5{
     /* margin: 20px auto; */
     text-align: center;
+    padding: 50px;
+    padding-top: 50px;
 }
 
 .H2{
@@ -16,18 +18,14 @@
     margin-bottom: 40px;
 }
 
-.body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-}
-
-.bodyP{
-    margin-bottom: 0px;
-    background-color: aqua;
-}
-
 .tabActiveHover{
-    border-bottom: 3px solid #e421e6;
+    border-bottom: 2px solid #e421e6;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../../../public/batthern.png");
+
 }

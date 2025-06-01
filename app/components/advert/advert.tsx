@@ -16,13 +16,13 @@ export default function Advert() {
         <Carousel.Caption 
           style={{
             textAlign:'left',
-            // background:'red',
             height:'100%',
             display:'flex',
             justifyContent:'center',
             flexDirection:'column',
             alignItems:'center',
-            rowGap:'20px'
+            rowGap:'20px',
+            zIndex:'10'
             }}>
               <div 
                 style={{
@@ -34,8 +34,8 @@ export default function Advert() {
                 <h2>
                   Learn Car  <span 
                     style={{
-                      background:offWhite1,
-                      color:primary,
+                      // background:offWhite1,
+                      // color:primary,
                       padding:'5px 5px'
                       }}>Driving</span> With Us.
                 </h2>
@@ -61,7 +61,9 @@ export default function Advert() {
             justifyContent:'center',
             flexDirection:'column',
             alignItems:'center',
-            rowGap:'20px'
+            rowGap:'20px',
+            zIndex:'10'
+
             }}>
               <div 
                 style={{
@@ -71,8 +73,8 @@ export default function Advert() {
                   }}>    
               <h6 style={{fontWeight:'bolder'}}>Get your Career Started with Us</h6>
               <h2>You can <span style={{
-                      background:offWhite1,
-                      color:primary,
+                      // background:offWhite1,
+                      // color:primary,
                       padding:'5px 5px'
                 }}>Learn Easy</span> Car Driving Skill</h2>
               </div>

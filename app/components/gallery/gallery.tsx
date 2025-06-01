@@ -1,6 +1,6 @@
 "use client"
 
-import { primary } from '@/colors/colors'
+import { charcoalGray2, primary } from '@/colors/colors'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import "./gallery.css";
 import GalleryStyles from "./gallery.module.css";
@@ -59,8 +59,9 @@ const categories = [
 ]
 
 export default function Gallery() {
-  return (<Row className={GalleryStyles.container}>
-        <h5 className={GalleryStyles.H5} style={{color:primary}}>Gallery</h5>
+  return (<Row className={GalleryStyles.container} style={{background:charcoalGray2}}>
+            <div className={GalleryStyles.overlay}></div>
+        <h2 className={GalleryStyles.H5} style={{color:primary}}>Gallery</h2>
         <TabGroup className="TabCont">
         <TabList className="TabContList">
 
@@ -81,7 +82,7 @@ export default function Gallery() {
             </Tab>
         </TabList>
         <TabPanels>
-            <TabPanel>
+            <TabPanel className="Tab-panel">
                 <Row>
                     {categories.map(category => <Col key={category.id} md={3} lg={3} xl={3} xxl={3}>
                         <GalleryMedia type={category.type} source={category.source} />

@@ -1,6 +1,7 @@
 .TabCont{
     color:#fafafa;
     min-height:300px ;
+    z-index: 100;
 }
 
 .TabContList{
@@ -12,6 +13,12 @@
     column-gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.Tab-panel{
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 
 /* .TabContList button{

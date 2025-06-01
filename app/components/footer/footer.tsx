@@ -1,12 +1,25 @@
 import { Col, Row } from "react-bootstrap";
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
-import FooterStyle from './footer.module.css';
+import  './footer.css';
+import { FaMarker } from "react-icons/fa6";
+import { offWhite2, primary } from "@/colors/colors";
+import Logo from "../UI/Logo";
 
 export default function Footer(){
     return (<>
-    <Row className={FooterStyle.container}>
-        <Col md={4}>
+    <Row className="footer-container">
+        <div className="footer-overlay"></div>
+        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
+            <Logo height={100} id="footer" width={100} />
+            <p>
+                Dride is an driving school company that specializes in teaching 
+                driving an help to get certificate to their learning customers..
+            </p>
+        
+        </Col>
+        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
             <h4>Contact</h4>
+            <div style={{width:'200px', height:'2px', marginBottom:"20px", background:primary}}></div>
             <p>
                 <b>Head Office: </b> 
                 22 Obafemi Awolowo way, Ikeja, Lagos.  
@@ -24,8 +37,9 @@ export default function Footer(){
                 Mon - Sun 8:00AM - 10:00PM
             </p>
         </Col>
-        <Col md={4}>
+        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
             <h4>Customer Support</h4>
+            <div style={{width:'200px', height:'2px', marginBottom:"20px", background:primary}}></div>
             <p>
                 <b>WhatsApp: </b>
                 08031234307
@@ -35,8 +49,10 @@ export default function Footer(){
                 08037894581
             </p>
         </Col>
-        <Col md={4}>
+        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
             <h4>Follow Us</h4>
+            <div style={{width:'200px', height:'2px', marginBottom:"20px", background:primary}}></div>
+
             <div 
                 style={{
                     display:'flex',
@@ -50,8 +66,8 @@ export default function Footer(){
             </div>
         </Col>
     </Row>
-    <div className={FooterStyle.containerLeg}>
-        copyright since 2025
+    <div className="containerLeg">
+        copyright &copy; since 2025
     </div>
     
     </>)

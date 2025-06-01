@@ -1,0 +1,41 @@
+.footer-container{
+    margin:0px; 
+    /* padding:0px; */
+
+    /* padding: 50px 40px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: #222222; */
+    /* background-color: #230a24; */
+    background-color: #201520;
+    /* color: aliceblue; */
+    color: #fafafa;
+    position: relative;
+}
+
+.footer-col{
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 200;
+}
+
+.footer-container  p{
+    color: #c0bcbc;
+}
+
+.footer-overlay{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-image: url("../../../public/3px-tile.png");
+    /* background-color: red; */
+}
+
+.containerLeg{
+    background-color: #2d2d2d;
+    /* color: aliceblue; */
+    color: #dddcdc;
+    padding: 20px 40px;
+    text-align: center;
+
+}
