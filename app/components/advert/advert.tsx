@@ -2,11 +2,9 @@
 
 import Carousel from 'react-bootstrap/Carousel';
 import AdvertBackImage from './AdvertItem';
-import AdvertStyle from "./advert.module.css";
 import ImageCarousel1 from "../../../public/carousel 1.png";
 import ImageCarousel2 from "../../../public/carousel 2.png";
 import CustomBtn from '../UI/CustomBtn';
-import { offWhite1, primary } from '@/colors/colors';
 
 export default function Advert() {
   return (

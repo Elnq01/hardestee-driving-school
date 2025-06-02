@@ -7,8 +7,6 @@ import "leaflet-defaulticon-compatibility"
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import locationStyles from "./location.module.css";
 import { Row } from 'react-bootstrap';
-import { primary } from '@/colors/colors';
-import CustomDesign from '../UI/customDesign';
 import HeaderDesign from '../UI/headerDesign';
 
 const position: LatLngExpression = [51.505, -0.09];
@@ -16,9 +14,7 @@ const position: LatLngExpression = [51.505, -0.09];
 export default function Location() {
   return (    
   <Row className={locationStyles.container}>   
-          {/* <h5 className={locationStyles.H5} style={{color:primary}}>Our Location</h5> */}
           <HeaderDesign text1="Our" text2="Location"/>
-          {/* <CustomDesign /> */}
           <h2 className={locationStyles.H2} >Where we are?</h2>
 
 

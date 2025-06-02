@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
-import {charcoalGray1, offWhite2, primary, warmGray1} from "../../../colors/colors";
+import {offWhite2} from "../../../colors/colors";
 import { FaArrowRight } from "react-icons/fa6";
 
-export default function CustomBtn({onClick, children, style}:any){
+export default function CustomBtn({onClick, children, style}){
 
 
     return (

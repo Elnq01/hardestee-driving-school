@@ -5,7 +5,7 @@ import {Row} from 'react-bootstrap';
 import AdvertStyle from './advert.module.css';
 
 
-export default function AdvertItem({source}:any){
+export default function AdvertItem({source}){
     return (
         <Row className={AdvertStyle.imageContainer}>
             <div className={AdvertStyle.overlay}></div>

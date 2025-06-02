@@ -1,4 +1,4 @@
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import AboutStyle from './about.module.css';
 import Image from "next/image";
 import ImageSrc from "../../../public/bus.jpg"
@@ -27,7 +27,7 @@ export default function QuickActions(){
                     <h1>10+</h1> 
                     <h3>years experience</h3>
                 </div>
-                <img src={ImageSrc.src} style={{width:'100%', height:'100%', overflow:'hidden'}} alt="quick action" />
+                <Image src={ImageSrc.src} style={{width:'100%', height:'100%', overflow:'hidden'}} alt="quick action" />
             </Col>
         </Row>
     )

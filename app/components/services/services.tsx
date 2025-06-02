@@ -11,10 +11,8 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import ServicesStyle from './services.module.css';
-import { charcoalGray2, primary, primaryLight } from '@/colors/colors';
-import CustomBtn from '../UI/CustomBtn';
+import { primaryLight } from '@/colors/colors';
 import ServicesIcon from './servicesIcons';
-import CustomDesign from '../UI/customDesign';
 import CustomBtn2 from '../UI/custombtn2';
 import HeaderDesign from '../UI/headerDesign';
 

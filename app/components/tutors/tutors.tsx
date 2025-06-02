@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardBody, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -11,9 +11,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import TutorsStyle from './tutors.module.css';
-import { charcoalGray2, offWhite2, primary, primaryHardDark, primaryLight, primaryLightDark } from '@/colors/colors';
-import CustomDesign from '../UI/customDesign';
-import CustomBtn2 from '../UI/custombtn2';
+import { offWhite2, primary } from '@/colors/colors';
 import Image from 'next/image';
 import ImgSrc from '../../../public/tutor 1.jpg';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';

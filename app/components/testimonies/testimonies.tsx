@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardBody, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -13,13 +13,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import TestimoniesStyle from './testimonies.module.css';
-import { offWhite2, primary, primaryLight } from '@/colors/colors';
-import CustomDesign from '../UI/customDesign';
-import CustomBtn2 from '../UI/custombtn2';
-import Image from 'next/image';
+import { primary} from '@/colors/colors';
 import ImgSrc from '../../../public/carousel 1.png';
 import TestimonyRating from './rating';
-import HeaderDesign from '../UI/headerDesign';
 
 const ourServices = [
     {

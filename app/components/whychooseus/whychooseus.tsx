@@ -2,12 +2,11 @@
 
 import { Col, Form, Row } from "react-bootstrap";
 import whychooseusStyles from "./whychooseus.module.css";
-import { offWhite2, primary } from "@/colors/colors";
+import {  primary } from "@/colors/colors";
 
 
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { FaCaretDown, FaUpDown } from "react-icons/fa6";
-import CustomBtn2 from "../UI/custombtn2";
+import { FaCaretDown } from "react-icons/fa6";
 import { useState } from "react";
 import CustomBtn from "../UI/CustomBtn";
 

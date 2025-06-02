@@ -1,6 +1,5 @@
-import { BiAnchor, BiCard, BiTrafficCone, BiUser, BiVideo } from 'react-icons/bi';
+
 import { CiCompass1, CiDeliveryTruck, CiMoneyCheck1, CiUser, CiVideoOn } from 'react-icons/ci';
-import { TfiIdBadge } from 'react-icons/tfi';
 
 export default function ServicesIcon({type}:any){
     let iconToDisplay;

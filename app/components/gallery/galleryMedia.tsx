@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IMage from "../../../public/bus.jpg";
 
-export default function GalleryMedia({type, source}:any){
+export default function GalleryMedia({type, source}){
     switch(type){
         
         case "video":
@@ -19,6 +19,6 @@ export default function GalleryMedia({type, source}:any){
 
         
         default:
-            return <img src={IMage.src} style={{width:'100%', height:'200px', borderRadius:'10px'}} alt="Image" />
+            return <Image src={IMage.src} style={{width:'100%', height:'200px', borderRadius:'10px'}} alt="Image" />
     }
 }

@@ -1,8 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from "react-icons/ci";
 import  './footer.css';
-import { FaMarker } from "react-icons/fa6";
-import { offWhite2, primary } from "@/colors/colors";
+import {  primary } from "@/colors/colors";
 import Logo from "../UI/Logo";
 
 export default function Footer(){

@@ -1,7 +1,6 @@
 import { Row } from "react-bootstrap";
 import HowStyles from "./HowItWorks.module.css";
-import CustomDesign from "../UI/customDesign";
-import { charcoalGray2, offWhite2, primary } from "@/colors/colors";
+import { charcoalGray2, offWhite2 } from "@/colors/colors";
 import { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa6";
 import HeaderDesign from "../UI/headerDesign";
@@ -25,7 +24,6 @@ export default function HowItWorks() {
       <Row className={HowStyles.container}>
         <div className={HowStyles.header}>
           <HeaderDesign text1="How It" text2="Works"/>
-          {/* <CustomDesign /> */}
           <h2 className={HowStyles.H2} >How Hardestee Driving School works?</h2>
         </div>
           <div className={HowStyles.videoContainer}>

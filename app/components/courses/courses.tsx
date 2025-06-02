@@ -11,9 +11,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import CoursesStyle from './courses.module.css';
-import { primary, primaryLight } from '@/colors/colors';
-import CustomBtn from '../UI/CustomBtn';
-import CustomDesign from '../UI/customDesign';
+import { primary } from '@/colors/colors';
 
 import CourseImage from '../../../public/bus.jpg';
 import CustomBtn2 from '../UI/custombtn2';

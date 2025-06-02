@@ -4,11 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavStyle from "./navigation.module.css";
-import Image from 'next/image';
-import { charcoalGray1, charcoalGray2, offWhite1, offWhite2, primary } from '@/colors/colors';
-import { CiFacebook, CiInboxOut, CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci';
-import { FaLetterboxd } from 'react-icons/fa6';
-import { FaEnvelope, FaPhone, FaPhoneAlt } from 'react-icons/fa';
+import { charcoalGray2, offWhite1, offWhite2, primary } from '@/colors/colors';
+import { CiFacebook,  CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci';
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Logo from '../UI/Logo';
 
