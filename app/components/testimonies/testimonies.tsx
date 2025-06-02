@@ -109,7 +109,7 @@ export default function Tutors(){
                             fontSize:'18px',
                             // color:offWhite2
                             }}>
-                        "{service.description}"
+                        &quot;{service.description}&quot;
                     </p>
                 </div>
 
