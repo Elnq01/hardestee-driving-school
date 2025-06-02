@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
         }} 
         defaultOpen={false}>
           
-             {({ open }) => {
+             {() => {
               const isOpen = accordionIndex === index;
 
              

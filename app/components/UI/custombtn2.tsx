@@ -3,7 +3,7 @@ import BtnStyle2 from './custombtn2.module.css';
 import { FaArrowRight } from "react-icons/fa6";
 
 
-export default function CustomBtn2({onClick, children, style}:any){
+export default function CustomBtn2({onClick, children, style}){
 
 
     return (

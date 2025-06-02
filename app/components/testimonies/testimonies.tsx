@@ -16,6 +16,7 @@ import TestimoniesStyle from './testimonies.module.css';
 import { primary} from '@/colors/colors';
 import ImgSrc from '../../../public/carousel 1.png';
 import TestimonyRating from './rating';
+import Image from 'next/image';
 
 const ourServices = [
     {
@@ -86,7 +87,7 @@ export default function Tutors(){
                     width:'100%',
                     }}>
                 <div style={{padding:'50px 80px'}}>
-                    <img 
+                    <Image 
                         style={{
                             width:'150px',
                             height:'150px',
