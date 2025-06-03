@@ -25,7 +25,7 @@ export default function Home() {
     <Gallery />
     <HowItWorks />
     <Testimonies />
-    <Location />
+    <Location /> 
   </>
   );
 }

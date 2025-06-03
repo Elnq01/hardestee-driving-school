@@ -3,6 +3,7 @@
     color: #fafafa;
     /* padding: 20px;   */
     /* margin-bottom: 100px; */
+    --bs-gutter-x: 0rem;
 }
 
 .body{

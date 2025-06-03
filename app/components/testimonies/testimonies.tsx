@@ -49,10 +49,11 @@ const ourServices = [
 export default function Tutors(){
   return (
     <Row className={TestimoniesStyle.container}>
-        <div style={{position:'absolute', width:'100%', height:'100%', background:'rgba(255,255,255,0.5)'}}></div>
-        <div style={{marginLeft:'50px', zIndex:'100', marginTop:'90px'}}>    
-            {/* <HeaderDesign text1="Our" text2="Testimonies"/> */}
-            {/* <CustomDesign /> */}
+        <div 
+            style={{position:'absolute', width:'100%', height:'100%', background:'rgba(255,255,255,0.5)'}}>
+        </div>
+        <div style={{paddingLeft:'50px', zIndex:'100', marginTop:'90px'}}>    
+            {/* <HeaderDesign text1="Our" text2="Testimonies"/>  */}
             <h2 className={TestimoniesStyle.H2} >What Saying Students Feedback</h2>
         </div>
       <Swiper

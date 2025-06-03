@@ -2,3 +2,14 @@
     color:whitesmoke;
     font-weight: bold;
 }
+
+.headerText{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+@media (max-width: 1000px){
+    .headerText{
+        display: none;
+    }
+}

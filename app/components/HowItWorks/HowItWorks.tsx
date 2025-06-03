@@ -6,7 +6,7 @@ import { FaPlay } from "react-icons/fa6";
 import HeaderDesign from "../UI/headerDesign";
 
 export default function HowItWorks() {
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [showControl, setShowControl] = useState(false);
 
   const onPlayHandler = () => {

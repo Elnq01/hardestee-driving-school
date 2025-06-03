@@ -4,6 +4,7 @@
     /* padding: 90px 50px; */
     padding-bottom: 50px;
     position: relative;
+    --bs-gutter-x: 0rem;
 }
 
 .H5{

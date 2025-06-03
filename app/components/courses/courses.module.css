@@ -2,7 +2,7 @@
     /* height: 300px; */
     padding: 90px 50px;
     padding-bottom: 50px;
-    background-color: red;
+    --bs-gutter-x: 0rem;
     
 }
 

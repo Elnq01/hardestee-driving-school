@@ -62,7 +62,8 @@ export default function Services(){
           delay: 2500,
           disableOnInteraction: false,
         }}
-        cssMode={true}
+        // cssMode={true}
+        style={{padding:'0px', margin:'0px'}}
         breakpoints={{
             1000:{
                 slidesPerView:4
@@ -84,8 +85,8 @@ export default function Services(){
       >
 
         {ourServices.map(service => <SwiperSlide key={service.id} 
-        style={{paddingBottom:'10px'}}>
-            <Card className='shadow' style={{padding:'5px', border:'0px'}}>
+        style={{paddingBottom:'10px', padding:'0px', margin:'0px'}}>
+            <Card className='shadow' style={{padding:'0px', border:'0px'}}>
                 <CardBody 
                 style={{
                     display:'flex', 

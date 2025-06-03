@@ -22,6 +22,6 @@ export default function GalleryMedia({type, source}:{type:string, source:string}
             return <Image 
             src={IMage.src} 
             width={0} 
-            height={0} style={{width:'100%', height:'200px', borderRadius:'10px'}} alt="Image" />
+            height={0} style={{width:'100%', height:'200px', borderRadius:'10px', marginTop:'7%'}} alt="Image" />
     }
 }

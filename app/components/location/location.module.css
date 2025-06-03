@@ -1,7 +1,7 @@
 .container{
     padding:50px;
     padding-top: 90px;
-    /* background-color: red; */
+    --bs-gutter-x: 0rem;
     
 }
 

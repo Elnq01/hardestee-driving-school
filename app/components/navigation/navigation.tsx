@@ -32,7 +32,7 @@ function NavScrollExample() {
       style={{background:"red"}}
       >
         {/* <Container> */}
-          {/* <Nav>
+          <Nav className={NavStyle.headerText}>
             <p>Get Your First Free Online Lesson Today</p>
           </Nav>
           <Nav className='mx-auto ' 
@@ -75,12 +75,12 @@ function NavScrollExample() {
               <p>info@hardesteedrivingschool.com</p>
             </div>
           </Nav>
-          <Nav style={{columnGap:'10px'}}>
+          <Nav style={{columnGap:'10px', paddingLeft:'2%', paddingRight:'2%'}}>
             <CiFacebook size={23}/>
             <CiTwitter size={23} />
             <CiInstagram size={23} />
             <CiYoutube size={23} />
-          </Nav> */}
+          </Nav>
         {/* </Container> */}
       </Navbar>
     <Navbar expand="lg" sticky='top' 
@@ -89,8 +89,8 @@ function NavScrollExample() {
         <Navbar.Brand className='ml-5' href="#">
           <Logo id={false} height={70} width={70} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll"> 
+        <Navbar.Toggle aria-controls="navbarScroll" color='white' />
+        <Navbar.Collapse id="navbarScroll" color='white' > 
           <Nav className='mx-auto'>
           </Nav>
           <Nav
