@@ -39,6 +39,7 @@ export default function Advert() {
                       }}>Driving</span> With Us.
                 </h2>
               <CustomBtn 
+                onClick={()=>{alert("Hello World!")}}
                 style={{
                   width:'auto'
                   // justifySelf:'flex-start',
@@ -79,6 +80,7 @@ export default function Advert() {
                       padding:'5px 5px'
                 }}>Learn Easy</span> Car Driving Skill</h2>
               <CustomBtn 
+                onClick={()=>{alert("Hello World!")}}
                 style={{
                   // justifySelf:'flex-start',
                   // alignSelf:'flex-start',

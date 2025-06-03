@@ -3,9 +3,11 @@
 import Image from 'next/image'; 
 import {Row} from 'react-bootstrap';
 import AdvertStyle from './advert.module.css';
+import type { StaticImageData } from "next/image";
 
 
-export default function AdvertItem({source}:{source:string}){
+
+export default function AdvertItem({source}:{source: StaticImageData}){
     return (
         <Row className={AdvertStyle.imageContainer}>
             <div className={AdvertStyle.overlay}></div>

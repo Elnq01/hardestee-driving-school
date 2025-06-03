@@ -105,7 +105,10 @@ export default function Courses(){
                     }}>
                     <Card.Title style={{fontWeight:'bold'}}>{service.title}</Card.Title>
                     <p style={{color:"#74757B"}}>{service.description}</p>
-                    <CustomBtn2 style={{alignSelf:"center"}}>View Course Details</CustomBtn2>
+                    <CustomBtn2 
+                        onClick={()=>{alert("Hello World!")}}
+
+                    style={{alignSelf:"center"}}>View Course Details</CustomBtn2>
                 </CardBody>
                 <Card.Footer style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}
                 >
