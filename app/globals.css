@@ -34,6 +34,10 @@ h2{
   color: #f8f8f8;
 }
 
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
 body {
   margin: 0px;
   padding: 0px;

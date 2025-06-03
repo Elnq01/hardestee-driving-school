@@ -20,12 +20,13 @@ export default function Advert() {
             flexDirection:'column',
             alignItems:'center',
             rowGap:'20px',
-            zIndex:'10'
+            zIndex:'10',
             }}>
               <div 
                 style={{
                   display:'flex',
                   flexDirection:'column',
+                  alignItems:'flex-start',
                   rowGap:'5px'
                   }}>      
                 <h6 style={{fontWeight:'bolder'}}>Grow Up your Skill</h6>
@@ -37,13 +38,14 @@ export default function Advert() {
                       padding:'5px 5px'
                       }}>Driving</span> With Us.
                 </h2>
-              </div>
               <CustomBtn 
                 style={{
+                  width:'auto'
                   // justifySelf:'flex-start',
-                  alignSelf:'flex-start',
-                  marginLeft:'210px'
+                  // alignSelf:'flex-start',
+                  // marginLeft:'210px'
                   }}>Explore Course</CustomBtn>
+              </div>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -67,6 +69,7 @@ export default function Advert() {
                 style={{
                   display:'flex',
                   flexDirection:'column',
+                  alignItems:'flex-start',
                   rowGap:'5px'
                   }}>    
               <h6 style={{fontWeight:'bolder'}}>Get your Career Started with Us</h6>
@@ -75,13 +78,13 @@ export default function Advert() {
                       // color:primary,
                       padding:'5px 5px'
                 }}>Learn Easy</span> Car Driving Skill</h2>
-              </div>
               <CustomBtn 
                 style={{
                   // justifySelf:'flex-start',
-                  alignSelf:'flex-start',
-                  marginLeft:'120px'
+                  // alignSelf:'flex-start',
+                  // marginLeft:'120px'
                   }}>Explore Course</CustomBtn>
+              </div>
         </Carousel.Caption>
 
       </Carousel.Item>

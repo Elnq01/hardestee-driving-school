@@ -28,8 +28,8 @@ function NavScrollExample() {
 
   return (<>
       <Navbar 
-      // style={{background:offWhite2}}
-      style={{background:"red"}}
+      style={{background:offWhite2}}
+      // style={{background:"red"}}
       >
         {/* <Container> */}
           <Nav className={NavStyle.headerText}>
