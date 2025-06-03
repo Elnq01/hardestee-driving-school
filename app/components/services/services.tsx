@@ -106,7 +106,9 @@ export default function Services(){
                     </div>
                     <h4>{service.title}</h4>
                     <p style={{color:"#74757B"}}>{service.description}</p>
-                    <CustomBtn2>Read More</CustomBtn2>
+                    <CustomBtn2
+                    onClick={()=>{alert("Hello World!")}}
+                    >Read More</CustomBtn2>
                 </CardBody>
             </Card>
         </SwiperSlide>)}

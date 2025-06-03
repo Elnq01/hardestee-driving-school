@@ -1,7 +1,7 @@
 import { charcoalGray2, primary } from "@/colors/colors";
 import HeaderDesignStyle from "./headerDesign.module.css";
 
-export default function HeaderDesign({text1, text2}){
+export default function HeaderDesign({text1, text2}:{text1:string, text2:string}){
     return <h5 className={HeaderDesignStyle.H5}>
             <span 
                 style={{

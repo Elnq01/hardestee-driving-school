@@ -87,7 +87,7 @@ function NavScrollExample() {
       style={{background:navbarscrollStyle}}>
       <Container fluid>
         <Navbar.Brand className='ml-5' href="#">
-          <Logo id={false} height={70} width={70} />
+          <Logo id="nav" height={70} width={70} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" color='white' />
         <Navbar.Collapse id="navbarScroll" color='white' > 

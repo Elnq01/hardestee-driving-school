@@ -39,7 +39,7 @@ const whyChooseUsinfo = [
 
 export default function WhyChooseUs() {
 
-  const [accordionIndex, setAccordionIndex] = useState(null);
+  const [accordionIndex, setAccordionIndex] = useState<number | null>(null);
   
   return (
         <Row className={whychooseusStyles.container}>
@@ -106,6 +106,7 @@ export default function WhyChooseUs() {
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
         <CustomBtn 
+          onClick={()=>{alert("Hello World!")}}
           style={{
             // color:offWhite2,
             // background:"rgba(255, 255, 255, 0.14)"
