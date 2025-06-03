@@ -36,7 +36,7 @@ export default function HowItWorks() {
                     // display:'block', 
                     // objectFit:'cover'
                     }} preload="none" poster="/how-hardestee-driving-school-works.png">
-                <source src="/how-hardestee-driving-school-works-3.mp4" type="video/mp4" />
+                <source src="/how-5.mp4" type="video/mp4" />
         
                 Your browser does not support the video tag.
             </video>

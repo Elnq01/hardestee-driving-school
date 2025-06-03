@@ -68,8 +68,22 @@ export default function Tutors(){
         slidesPerView={4}
         // spaceBetween={30}
         pagination={true}
-        // mousewheel={true}
-        // keyboard={true}
+        breakpoints={{
+            1000:{
+                slidesPerView:4
+            },
+            800:{
+                slidesPerView:3
+            },
+
+            500:{
+                slidesPerView:2
+            },
+
+            100:{
+                slidesPerView:1
+            }
+        }}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
@@ -88,6 +102,8 @@ export default function Tutors(){
                     }}>
                 <div style={{padding:'50px 80px'}}>
                     <Image 
+                        width={0}
+                        height={0}
                         style={{
                             width:'150px',
                             height:'150px',

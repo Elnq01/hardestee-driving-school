@@ -63,10 +63,22 @@ export default function Services(){
           disableOnInteraction: false,
         }}
         cssMode={true}
-        // navigation={true}
-        // pagination={true}
-        // mousewheel={true}
-        // keyboard={true}
+        breakpoints={{
+            1000:{
+                slidesPerView:4
+            },
+            800:{
+                slidesPerView:3
+            },
+
+            500:{
+                slidesPerView:2
+            },
+
+            100:{
+                slidesPerView:1
+            }
+        }}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >

@@ -8,7 +8,7 @@ import CustomBtn from '../UI/CustomBtn';
 
 export default function Advert() {
   return (
-    <Carousel controls={false} fade>
+    <Carousel controls={false} fade style={{background:'red'}}>
       <Carousel.Item>
         <AdvertBackImage source={ImageCarousel1} />
         <Carousel.Caption 

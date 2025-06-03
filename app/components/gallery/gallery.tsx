@@ -84,7 +84,7 @@ export default function Gallery() {
         <TabPanels>
             <TabPanel className="Tab-panel">
                 <Row>
-                    {categories.map(category => <Col key={category.id} md={3} lg={3} xl={3} xxl={3}>
+                    {categories.map(category => <Col key={category.id} xs={12} sm={6} md={6} lg={4} xl={3} xxl={3}>
                         <GalleryMedia type={category.type} source={category.source} />
                     </Col>)}
                 </Row>

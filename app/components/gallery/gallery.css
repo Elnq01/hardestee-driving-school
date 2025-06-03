@@ -16,8 +16,9 @@
 }
 
 .Tab-panel{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    /* padding:auto 50px; */
 
 }
 

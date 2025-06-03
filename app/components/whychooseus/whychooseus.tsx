@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
         <Row className={whychooseusStyles.container}>
        {/* <div className={whychooseusStyles.containerWhyChoose}></div> */}
       
-      <Col xs={12} sm={12} md={12} xl={6} xxl={6} lg={6} className={whychooseusStyles.colum1}>
+      <Col xs={12} sm={12} md={6} xl={6} xxl={6} lg={6} className={whychooseusStyles.colum1}>
         <h2 style={{margin:'40px auto'}}>Why Choose Us</h2>
         {whyChooseUsinfo.map((info, index) => <Disclosure key={info.id} as="div" 
         className="p-6" 
@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
             </Disclosure>)}
       </Col>
 
-    <Col xs={12} sm={12} md={12} xl={6} xxl={6} lg={6} className={whychooseusStyles.colum2}>
+    <Col xs={12} sm={12} md={6} xl={6} xxl={6} lg={6} className={whychooseusStyles.colum2}>
       <Form className={whychooseusStyles.form}>
         <h3 style={{textAlign:'center'}}>Ask Any Question</h3>
         <Form.Group className="mb-3" controlId="formBasicEmail">

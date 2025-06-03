@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IMage from "../../../public/bus.jpg";
 
-export default function GalleryMedia({type, source}){
+export default function GalleryMedia({type, source}:{type:string, source:string}){
     switch(type){
         
         case "video":
@@ -14,11 +14,14 @@ export default function GalleryMedia({type, source}){
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className="mb-4"
-                        style={{borderRadius:'10px'}}
+                        style={{borderRadius:'10px', width:'100%'}}
                         />
 
         
         default:
-            return <Image src={IMage.src} style={{width:'100%', height:'200px', borderRadius:'10px'}} alt="Image" />
+            return <Image 
+            src={IMage.src} 
+            width={0} 
+            height={0} style={{width:'100%', height:'200px', borderRadius:'10px'}} alt="Image" />
     }
 }

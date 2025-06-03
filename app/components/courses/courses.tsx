@@ -64,19 +64,28 @@ export default function Courses(){
         slidesPerView={3}
         style={{padding:'auto 50px'}}
         spaceBetween={30}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // className="mySwiper"
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
         cssMode={true}
         // navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        breakpoints={{
+            1000:{
+                slidesPerView:3
+            },
+
+            700:{
+                slidesPerView:2
+            },
+
+            100:{
+                slidesPerView:1
+            }
+        }}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >

@@ -8,7 +8,7 @@ export default function Footer(){
     return (<>
     <Row className="footer-container">
         <div className="footer-overlay"></div>
-        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
+        <Col xs={12} sm={6} md={6} lg={6} xl={3} xxl={3} className="footer-col">
             <Logo height={100} id="footer" width={100} />
             <p>
                 Dride is an driving school company that specializes in teaching 
@@ -16,7 +16,7 @@ export default function Footer(){
             </p>
         
         </Col>
-        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
+        <Col xs={12} sm={6} md={6} lg={6} xl={3} xxl={3} className="footer-col">
             <h4>Contact</h4>
             <div style={{width:'200px', height:'2px', marginBottom:"20px", background:primary}}></div>
             <p>
@@ -36,7 +36,7 @@ export default function Footer(){
                 Mon - Sun 8:00AM - 10:00PM
             </p>
         </Col>
-        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
+        <Col xs={12} sm={6} md={6} lg={6} xl={3} xxl={3} className="footer-col">
             <h4>Customer Support</h4>
             <div style={{width:'200px', height:'2px', marginBottom:"20px", background:primary}}></div>
             <p>
@@ -48,7 +48,7 @@ export default function Footer(){
                 08037894581
             </p>
         </Col>
-        <Col md={3} lg={3} xl={3} xxl={3} className="footer-col">
+        <Col xs={12} sm={6} md={6} lg={6} xl={3} xxl={3} className="footer-col">
             <h4>Follow Us</h4>
             <div style={{width:'200px', height:'2px', marginBottom:"20px", background:primary}}></div>
 

@@ -40,6 +40,16 @@
   color:#fafafa;
 }
 
+@media (max-width: 800px){
+  .colum1{
+    padding:20px 50px;
+  }
+
+  .colum2{
+    padding:20px 50px;
+  }
+}
+
 .form{
   padding:30px 40px;
   color:#fafafa;

@@ -1,7 +1,7 @@
 
 import { CiCompass1, CiDeliveryTruck, CiMoneyCheck1, CiUser, CiVideoOn } from 'react-icons/ci';
 
-export default function ServicesIcon({type}){
+export default function ServicesIcon({type}:{type:string}){
     let iconToDisplay;
     switch(type){
         case 'Get License':

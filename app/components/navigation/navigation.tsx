@@ -27,9 +27,12 @@ function NavScrollExample() {
   }, [])
 
   return (<>
-      <Navbar style={{background:offWhite2}}>
-        <Container>
-          <Nav>
+      <Navbar 
+      // style={{background:offWhite2}}
+      style={{background:"red"}}
+      >
+        {/* <Container> */}
+          {/* <Nav>
             <p>Get Your First Free Online Lesson Today</p>
           </Nav>
           <Nav className='mx-auto ' 
@@ -77,14 +80,14 @@ function NavScrollExample() {
             <CiTwitter size={23} />
             <CiInstagram size={23} />
             <CiYoutube size={23} />
-          </Nav>
-        </Container>
+          </Nav> */}
+        {/* </Container> */}
       </Navbar>
     <Navbar expand="lg" sticky='top' 
       style={{background:navbarscrollStyle}}>
       <Container fluid>
         <Navbar.Brand className='ml-5' href="#">
-          <Logo height={70} width={70} />
+          <Logo id={false} height={70} width={70} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll"> 

@@ -61,10 +61,22 @@ export default function Tutors(){
           disableOnInteraction: false,
         }}
         cssMode={true}
-        // navigation={true}
-        // pagination={true}
-        // mousewheel={true}
-        // keyboard={true}
+        breakpoints={{
+            1000:{
+                slidesPerView:4
+            },
+            800:{
+                slidesPerView:3
+            },
+
+            500:{
+                slidesPerView:2
+            },
+
+            100:{
+                slidesPerView:1
+            }
+        }}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         
       >
@@ -74,6 +86,8 @@ export default function Tutors(){
 
             <Col className={TutorsStyle.tutorCard} md={3} xl={3} xxl={3}>
                 <Image src={ImgSrc} alt="Img Bkg" 
+                    width={0}
+                    height={0}
                     style={{width:'100%', height:'100%', borderRadius:'10px'}} />
                 <div style={{
                     bottom:'50px',
