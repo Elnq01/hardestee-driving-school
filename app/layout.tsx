@@ -6,6 +6,8 @@ import Footer from "./components/footer/footer";
 
 
 import 'leaflet/dist/leaflet.css';
+import { Suspense } from "react";
+import Loader from "./components/loader/loader";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -32,9 +34,11 @@ export default function RootLayout({
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <Navigation />
-        {children}
-      <Footer />
+        <Suspense fallback={<Loader />}>
+          <Navigation />
+            {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

@@ -9,8 +9,11 @@ import Advert from "./components/advert/advert";
 import Courses from "./components/courses/courses";
 import Tutors from "./components/tutors/tutors";
 import Gallery from "./components/gallery/gallery";
-import Location from "./components/location/location";
+// import Location from "./components/location/location";
+import dynamic from "next/dynamic";
 
+// SSR disabled
+const Location = dynamic(() => import("./components/location/location"), { ssr: false });
 
 
 
