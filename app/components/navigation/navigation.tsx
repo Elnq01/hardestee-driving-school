@@ -28,18 +28,17 @@ function NavScrollExample() {
 
   return (<>
       <Navbar 
-      style={{background:offWhite2}}
+      className={NavStyle.topNav}
+      style={{
+        background:offWhite2
+      }}
       // style={{background:"red"}}
       >
         {/* <Container> */}
           <Nav className={NavStyle.headerText}>
             <p>Get Your First Free Online Lesson Today</p>
           </Nav>
-          <Nav className='mx-auto ' 
-          style={{
-            columnGap:'20px', 
-            justifyContent:'center', 
-            alignItems:'center'}}>
+          <Nav className={`mx-auto ${NavStyle.topNavMid}`}>
             <div style={{
               display:'flex', 
               flexDirection:'row', 
@@ -75,7 +74,7 @@ function NavScrollExample() {
               <p>info@hardesteedrivingschool.com</p>
             </div>
           </Nav>
-          <Nav style={{columnGap:'10px', paddingLeft:'2%', paddingRight:'2%'}}>
+          <Nav className={NavStyle.topNavIcon}>
             <CiFacebook size={23}/>
             <CiTwitter size={23} />
             <CiInstagram size={23} />

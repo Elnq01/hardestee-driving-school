@@ -4,6 +4,7 @@
     padding-top: 90px;
     padding-bottom: 50px;
     --bs-gutter-x: 0rem;
+    position: relative;
     
 }
 

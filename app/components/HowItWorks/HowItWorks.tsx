@@ -40,20 +40,23 @@ export default function HowItWorks() {
         
                 Your browser does not support the video tag.
             </video>
-            {showControl? null:<button onClick={onPlayHandler} 
-              style={{
-                position:'absolute', 
-                top:'50%', 
-                left:'50%',
-                background:charcoalGray2,
-                borderRadius:"50%",
-                padding:'20px 18px',
-                display:'flex',
-                justifyContent:'center',
-                alignItems:'center'
-                }}>
-              <FaPlay size={50} color={offWhite2} />
-            </button>}
+            {showControl? null:<div style={{
+              position:'absolute',
+              display:'flex',
+              justifyContent:'center',
+              alignItems:'center',
+              height:'100%',
+              width:'100%'
+            }}>
+              <button onClick={onPlayHandler} 
+                style={{
+                  background:charcoalGray2,
+                  borderRadius:"50%",
+                  padding:'20px',
+                  }}>
+                <FaPlay size={50} color={offWhite2} />
+              </button>
+            </div>}
           </div>
       </Row>
   );

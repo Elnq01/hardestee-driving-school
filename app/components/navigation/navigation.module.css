@@ -3,6 +3,25 @@
     font-weight: bold;
 }
 
+.topNav{
+    padding-left:1%;
+    padding-right:1%;
+}
+
+.topNavMid{
+    display: flex;
+    flex-direction: row;
+    column-gap:20px; 
+    justify-content:center; 
+    align-items:center;    
+}
+
+.topNavIcon{
+    column-gap:10px;
+    padding-left:2%;
+    padding-right:2%
+}
+
 .headerText{
     padding-left: 2%;
     padding-right: 2%;
@@ -11,5 +30,13 @@
 @media (max-width: 1000px){
     .headerText{
         display: none;
+    }
+
+    .topNav{
+        justify-content: flex-end;
+    }
+
+    .topNavMid{
+        display: none;   
     }
 }

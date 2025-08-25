@@ -1,0 +1,9 @@
+.cardContainer{   
+    /* --bs-gutter-x:0.5rem; */
+    padding:7% 10%;
+}
+
+.container{
+    --bs-gutter-x:0rem;
+
+}

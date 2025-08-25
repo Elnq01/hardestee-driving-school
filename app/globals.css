@@ -45,3 +45,13 @@ body {
   background-color: #f8f8f8;
   /* background:green; */
 }
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white !important;  /* or #fff */
+}
+
+body > div.allcourses-module__JwsRwq__container.row > div:nth-child(1) > div > nav > ol > li:nth-child(1) > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
