@@ -47,7 +47,7 @@ const ourServices = [
 
 export default function Services(){
   return (
-    <Row className={ServicesStyle.container}>
+    <Row className={ServicesStyle.container} id="Services">
         <HeaderDesign text1="Our" text2="Services"/>
         {/* <CustomDesign /> */}
         <h2 className={ServicesStyle.H2} >Get To Know Our Services</h2>

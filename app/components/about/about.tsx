@@ -6,7 +6,7 @@ import { charcoalGray2, offWhite2 } from "@/colors/colors";
 
 export default function QuickActions(){
     return (
-        <Row className={AboutStyle.container} style={{background:charcoalGray2}}>
+        <Row id="About" className={AboutStyle.container} style={{background:charcoalGray2}}>
             <Col xs={12} sm={12} md={6} xl={6} xxl={6} lg={6} className={AboutStyle.body} >
                 <h4>About Us</h4>
                 <h2>Learn To Drive, Drive With Safety And Control.</h2>

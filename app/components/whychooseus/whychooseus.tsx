@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
   const [accordionIndex, setAccordionIndex] = useState<number | null>(null);
   
   return (
-        <Row className={whychooseusStyles.container}>
+        <Row id="Contact" className={whychooseusStyles.container}>
        {/* <div className={whychooseusStyles.containerWhyChoose}></div> */}
       
       <Col xs={12} sm={12} md={6} xl={6} xxl={6} lg={6} className={whychooseusStyles.colum1}>

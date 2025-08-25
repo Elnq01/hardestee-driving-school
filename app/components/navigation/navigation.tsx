@@ -95,11 +95,11 @@ function NavScrollExample() {
             style={{ maxHeight: '100px'}}
             navbarScroll
           >
-            <Nav.Link href="#" className={NavStyle.links} >Home</Nav.Link>
-            <Nav.Link href="#" className={NavStyle.links}>Bookings</Nav.Link>
-            <Nav.Link href="#" className={NavStyle.links}>Services</Nav.Link>
-            <Nav.Link href="#" className={NavStyle.links}>Contact Us</Nav.Link>
-            <Nav.Link href="#" className={NavStyle.links}>About Us</Nav.Link>
+            <Nav.Link href="/" className={NavStyle.links} >Home</Nav.Link>
+            <Nav.Link href="/allcourses" className={NavStyle.links}>Courses</Nav.Link>
+            <Nav.Link href="#Services" className={NavStyle.links}>Services</Nav.Link>
+            <Nav.Link href="#Contact" className={NavStyle.links}>Contact Us</Nav.Link>
+            <Nav.Link href="#About" className={NavStyle.links}>About Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
