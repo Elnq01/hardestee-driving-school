@@ -32,9 +32,7 @@ function NavScrollExample() {
       style={{
         background:offWhite2
       }}
-      // style={{background:"red"}}
       >
-        {/* <Container> */}
           <Nav className={NavStyle.headerText}>
             <p>Get Your First Free Online Lesson Today</p>
           </Nav>
@@ -80,8 +78,8 @@ function NavScrollExample() {
             <CiInstagram size={23} />
             <CiYoutube size={23} />
           </Nav>
-        {/* </Container> */}
       </Navbar>
+
     <Navbar expand="lg" sticky='top' 
       style={{background:navbarscrollStyle}}>
       <Container fluid>
