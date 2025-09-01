@@ -1,10 +1,10 @@
 "use client"
 
-import { Breadcrumb, Col, Row, Table } from "react-bootstrap";
+import { Breadcrumb, Col, Row } from "react-bootstrap";
 import {ourCourses} from ".././coursesdata"
 // import CustomBtn2 from "../../components/UI/custombtn2";
 import Image from "next/image";
-import { offWhite1, offWhite2, primary } from "@/colors/colors";
+import {offWhite2 } from "@/colors/colors";
 // import { CiTimer } from "react-icons/ci";
 // import CourseImage from '../../public/bus.jpg';
 import AllCoursesSrc from "../../../public/allcourses.png";

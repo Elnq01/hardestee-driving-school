@@ -5,7 +5,7 @@ import ImgSrc3 from '../../../public/tutor 3.jpg';
 import ImgSrc4 from '../../../public/tutor 4.jpg';
 import ImgSrc5 from '../../../public/tutor 5.jpg';
 
-export default function TutorImg({id}:{id:String}){
+export default function TutorImg({id}:{id:string}){
     switch(id){
         case 'Adewale Joshua':
             return <Image src={ImgSrc} alt="Img Bkg" 

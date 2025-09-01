@@ -4,7 +4,7 @@ import CourseImage2 from '../../../public/cur 2.jpg';
 import CourseImage3 from '../../../public/cus 3.jpg';
 import { Card } from "react-bootstrap";
 
-export default function CourseImg({title}:{title:String}){
+export default function CourseImg({title}:{title:string}){
     switch(title){
         case "Automatic Car Lessons":
             // return <Image src={CourseImage1} alt="automatic" />

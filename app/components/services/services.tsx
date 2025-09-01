@@ -13,7 +13,7 @@ import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/m
 import ServicesStyle from './services.module.css';
 import { primaryLight } from '@/colors/colors';
 import ServicesIcon from './servicesIcons';
-import CustomBtn2 from '../UI/custombtn2';
+// import CustomBtn2 from '../UI/custombtn2';
 import HeaderDesign from '../UI/headerDesign';
 
 

@@ -13,10 +13,10 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import TestimoniesStyle from './testimonies.module.css';
-import { charcoalGray1, offWhite2, primary} from '@/colors/colors';
-import ImgSrc from '../../../public/carousel 1.png';
+import { charcoalGray1, offWhite2 } from '@/colors/colors';
+// import ImgSrc from '../../../public/carousel 1.png';
 import TestimonyRating from './rating';
-import Image from 'next/image';
+// import Image from 'next/image';
 import TestImg from './testImg';
 
 const ourServices = [

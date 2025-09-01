@@ -7,7 +7,7 @@ import TestImage5 from '../../../public/tes 2.jpg';
 import { primary } from "@/colors/colors";
 
 
-export default function TestImg({title}:{title:String}){
+export default function TestImg({title}:{title:string}){
     switch(title){
         case "Solomon kane":
             // return <Image src={CourseImage1} alt="automatic" />
