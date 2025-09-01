@@ -21,27 +21,27 @@ const ourServices = [
     {
         id:0,
         title:"Get License",
-        description:'MY ride was sweet like butter'
+        description:'Guidance and support to help you obtain your driver’s license quickly and stress-free.'
     },
     {
         id:1,
         title:"Instructor Training",
-        description:'MY ride was sweet like butter'
+        description:'Train with experts and build a rewarding career as a driving instructor'
     },
     {
         id:2,
         title:"Traffic Guidelines",
-        description:'MY ride was sweet like butter'
+        description:'Master road safety by following traffic laws and best practices.'
     }, 
     {
         id:3,
         title:"Learn Driving",
-        description:'MY ride was sweet like butter'
+        description:'Comprehensive driving lessons designed for beginners and experienced learners.'
     },
     {
         id:4,
         title:"Video courses",
-        description:'MY ride was sweet like butter'
+        description:'High-quality video courses covering traffic rules, driving skills, and safety.'
     }
 ]
 
@@ -85,8 +85,8 @@ export default function Services(){
       >
 
         {ourServices.map(service => <SwiperSlide key={service.id} 
-        style={{paddingBottom:'10px', padding:'0px', margin:'0px'}}>
-            <Card className='shadow' style={{padding:'0px', border:'0px'}}>
+        style={{paddingBottom:'20px', padding:'0px', margin:'0px'}}>
+            <Card className='shadow' style={{padding:'0px', border:'0px', minHeight:'300px'}}>
                 <CardBody 
                 style={{
                     display:'flex', 
@@ -106,9 +106,9 @@ export default function Services(){
                     </div>
                     <h4>{service.title}</h4>
                     <p style={{color:"#74757B"}}>{service.description}</p>
-                    <CustomBtn2
+                    {/* <CustomBtn2
                     onClick={()=>{alert("Hello World!")}}
-                    >Read More</CustomBtn2>
+                    >Read More</CustomBtn2> */}
                 </CardBody>
             </Card>
         </SwiperSlide>)}

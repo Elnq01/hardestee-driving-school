@@ -13,32 +13,15 @@ import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/m
 import CoursesStyle from './courses.module.css';
 import { primary } from '@/colors/colors';
 
-import CourseImage from '../../../public/bus.jpg';
+import CourseImage from '../../../public/avatar.png';
 import CustomBtn2 from '../UI/custombtn2';
 import { CiTimer } from 'react-icons/ci';
 import Image from 'next/image';
 import HeaderDesign from '../UI/headerDesign';
+import CourseImg from './courseImg';
+import {ourCourses} from "../../allcourses/coursesdata"
 
 
-const ourServices = [
-    {
-        id:0,
-        title:"Automatic Car Lessons",
-        description:'My ride was sweet like butter. My ride was sweet like butter. My ride was sweet like butter'
-    },
-    {
-        id:1,
-        title:"Highway Driving Lessons",
-        description:'My ride was sweet like butter. My ride was sweet like butter. My ride was sweet like butter'
-
-    },
-    {
-        id:2,
-        title:"For International Drivers",
-        description:'My ride was sweet like butter. My ride was sweet like butter. My ride was sweet like butter'
-
-    }, 
-]
 
 export default function Courses(){
   return (
@@ -90,10 +73,10 @@ export default function Courses(){
         
       >
 
-        {ourServices.map(service => <SwiperSlide key={service.id} 
+        {ourCourses.map(service => <SwiperSlide key={service.id} 
         style={{paddingBottom:'10px'}}>
             <Card className='shadow' style={{border:'0px'}}>
-                <Card.Img variant='top' src={CourseImage.src} />
+                <CourseImg title={service.title} />
                 <CardBody 
                 style={{
                     display:'flex', 
@@ -104,7 +87,7 @@ export default function Courses(){
                     // alignItems:'center'
                     }}>
                     <Card.Title style={{fontWeight:'bold'}}>{service.title}</Card.Title>
-                    <p style={{color:"#74757B"}}>{service.description}</p>
+                    <p style={{color:"#74757B"}}>{service.shortDescription}</p>
                     <CustomBtn2 
                         onClick={()=>{alert("Hello World!")}}
 
@@ -121,8 +104,8 @@ export default function Courses(){
                         style={{borderRadius:'50%'}} />
 
                         <div style={{padding:'0px'}}>
-                            <h6 style={{margin:'0px'}}>Mr Elijah</h6>
-                            <p style={{color:primary}}>Instructor</p>
+                            <h6 style={{margin:'0px'}}>{service.tutor.name}</h6>
+                            <p style={{color:primary}}>{service.tutor.role}</p>
                         </div>
                     </div>
                     <div 

@@ -12,10 +12,9 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import TutorsStyle from './tutors.module.css';
 import { offWhite2, primary } from '@/colors/colors';
-import Image from 'next/image';
-import ImgSrc from '../../../public/tutor 1.jpg';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
 import HeaderDesign from '../UI/headerDesign';
+import TutorImg from './tutorImg';
 
 
 const ourTutors = [
@@ -27,7 +26,7 @@ const ourTutors = [
     {
         id:1,
         title:"Senior Instructor",
-        name:'Ogundele Semilogo'
+        name:'Olawale Gbenga'
     },
     {
         id:2,
@@ -85,10 +84,11 @@ export default function Tutors(){
         style={{paddingBottom:'70px'}}>
 
             <Col className={TutorsStyle.tutorCard} md={3} xl={3} xxl={3}>
-                <Image src={ImgSrc} alt="Img Bkg" 
+                {/* <Image src={ImgSrc} alt="Img Bkg" 
                     width={0}
                     height={0}
-                    style={{width:'100%', height:'100%', borderRadius:'10px'}} />
+                    style={{width:'100%', height:'100%', borderRadius:'10px'}} /> */}
+                <TutorImg id={tutor.name} />
                 <div style={{
                     bottom:'50px',
                     left:'30px',

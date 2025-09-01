@@ -4,13 +4,15 @@ import { Breadcrumb, Col, Row, Table } from "react-bootstrap";
 import {ourCourses} from ".././coursesdata"
 // import CustomBtn2 from "../../components/UI/custombtn2";
 import Image from "next/image";
-import { offWhite2 } from "@/colors/colors";
+import { offWhite1, offWhite2, primary } from "@/colors/colors";
 // import { CiTimer } from "react-icons/ci";
 // import CourseImage from '../../public/bus.jpg';
 import AllCoursesSrc from "../../../public/allcourses.png";
 import SingleSrc from "../../../public/single.jpg"
 import singlecourseStyle from "./singlecourse.module.css";
 import { useParams } from "next/navigation";
+import MarkSingle from "./marksingle";
+import MarkSingleArrow from "./marksinglearrow";
 
 
 export default function SingleCourse(){
@@ -41,7 +43,7 @@ export default function SingleCourse(){
                         <Breadcrumb.Item 
                         style={{
                             color:offWhite2,
-                            textDecoration:'none'
+                            textDecoration:'none !important'
                             }} href="#">Home</Breadcrumb.Item>
                         <Breadcrumb.Item style={{color:offWhite2}} active>Courses</Breadcrumb.Item>
                     </Breadcrumb>
@@ -68,34 +70,65 @@ export default function SingleCourse(){
                     </div>
                 </div>
 
-                <p style={{margin:'20px auto', fontSize:'18px', textAlign:'justify'}}>{singleData[0].longDescription}</p>
+                <p 
+                style={{
+                    margin:'20px auto', 
+                    marginTop:'40px',
+                    fontSize:'18px', 
+                    // textAlign:'justify'
+                    }}>
+                    {singleData[0].longDescription}
+                </p>
                 <div style={{position:'relative', marginTop:'60px'}}>
-                    <h3 style={{marginBottom:'30px'}}>Driving School Advantages</h3>
-                    <div style={{height:'200px', width:'200px'}}>
-                        <Image src={SingleSrc} alt="advantages" style={{height:'100%', width:'100%'}} />
-                    </div>
-                    <div style={{position:'absolute', right:'-20px', top:'30%'}}>
-                        {singleData[0].advantages.map((item, index) => {
-                            return <div 
-                            style={{fontWeight:'bolder', fontSize:'17px',
-                                marginBottom:'10px'
-                            }} key={index}>{item}</div>
-                        })}
+                    <h3 style={{marginBottom:'30px',  fontWeight:'bolder'}}>Driving School Advantages</h3>
+                    <div style={{display:"flex", flexDirection:'row', columnGap:'20px'}}>
+                        <div style={{height:'200px', width:'200px'}}>
+                            <Image src={SingleSrc} alt="advantages" style={{height:'100%', width:'100%'}} />
+                        </div>
+                        <div 
+                        // style={{position:'absolute', right:'-20px', top:'30%'}}
+                        style={{background:'white', padding:'20px', borderRadius:'10px'}}
+                        >
+                            {singleData[0].advantages.map((item, index) => {
+                                return <div 
+                                style={{
+                                    fontWeight:'bold', fontSize:'17px',
+                                    marginBottom:'10px',
+                                    display:'flex', flexDirection:'row',
+                                    columnGap:'10px'
+                                }} 
+                                key={index}>
+                                    <MarkSingle />
+                                    <span>{item}</span>
+                                    </div>
+                            })}
+                        </div>
                     </div>
                 </div>
             </Col>
             <Col lg={4} style={{padding:'20px'}}>
 
-                <h3>Course Features</h3>
-                <div style={{marginBottom:'50px', marginTop:'30px'}}>
+                <h3 style={{fontWeight:'bolder'}}>Course Features</h3>
+                <div style={{
+                    marginBottom:'50px', marginTop:'30px',
+                    background:'rgb(250, 210, 252)', borderRadius:'10px', 
+                    padding:'20px', 
+                    }}>
                     {singleData[0].features.map((item, index) => {
-                        return <p key={index}>{item}</p>
+                        return <div key={index} style={{
+                            display:'flex', 
+                            flexDirection:'row', 
+                            columnGap:'20px'
+                            }}>
+                            <MarkSingleArrow />
+                            <span style={{ padding:'0px'}}>{item}</span>
+                        </div>
                     })}
                 </div>
 
-                 <Table striped bordered hover>
+                 {/* <Table striped bordered hover >
                     <thead>
-                        <tr>
+                        <tr className="bg-primary text-white">
                         <th colSpan={4}>Core Features</th>
                         </tr>
                     </thead>
@@ -109,7 +142,7 @@ export default function SingleCourse(){
                             <td>15</td>
                         </tr>
                     </tbody>
-                </Table>
+                </Table> */}
             </Col>
         </Row>
     </Row>

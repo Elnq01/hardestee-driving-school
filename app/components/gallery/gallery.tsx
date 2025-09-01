@@ -12,38 +12,44 @@ const categories = [
     {
         id:0,
         type:'video',
-        source:"https://www.youtube.com/embed/Ktyjqu470wo"
+        source:"https://www.youtube.com/embed/uvaYu_Hu_Cs"
     },
     {
         id:1,
         type:'video',
-        source:"https://www.youtube.com/embed/Ktyjqu470wo"
+        source:"https://www.youtube.com/embed/yLucPfk2HDs"
 
     },
     {
         id:2,
         type:'video',
-        source:"https://www.youtube.com/embed/Ktyjqu470wo"
+        source:"https://www.youtube.com/embed/XUTBKxO1nQA"
 
     },    
     {
         id:3,
         type:'video',
-        source:"https://www.youtube.com/embed/Ktyjqu470wo"
+        source:"https://www.youtube.com/embed/hcJYjBShWAtc"
 
     },
     {
         id:4,
         type:'video',
-        source:"https://www.youtube.com/embed/Ktyjqu470wo"
+        source:"https://www.youtube.com/embed/HAABS53zgoA"
 
     },
     {
         id:5,
         type:'video',
-        source:"https://www.youtube.com/embed/Ktyjqu470wo"
+        source:"https://www.youtube.com/embed/ZUrLjlVLUOE"
 
-    },
+    }
+]
+
+
+// second tab data
+const categories2 = [
+    
     {
         id:6,
         type:'image',
@@ -55,14 +61,14 @@ const categories = [
         type:'image',
         source:"https://www.youtube.com/embed/Ktyjqu470wo"
 
-    },
+    }
 ]
 
 export default function Gallery() {
   return (<Row className={GalleryStyles.container} style={{background:charcoalGray2}}>
             <div className={GalleryStyles.overlay}></div>
         <h2 className={GalleryStyles.H5} style={{color:primary}}>Gallery</h2>
-        <TabGroup className="TabCont">
+        <TabGroup className="TabCont" style={{minHeight:'600px'}}>
         <TabList className="TabContList">
 
             <Tab as={Fragment}>
@@ -75,13 +81,8 @@ export default function Gallery() {
                 <button className={`${hover && GalleryStyles.tabActiveHover} ${selected  && GalleryStyles.tabActiveHover}`}>Tab 2</button>
             )}
             </Tab>
-            <Tab as={Fragment}>
-            {({ hover, selected }) => (
-                <button className={`${hover && GalleryStyles.tabActiveHover} ${selected  && GalleryStyles.tabActiveHover}`}>Tab 3</button>
-            )}
-            </Tab>
         </TabList>
-        <TabPanels>
+        <TabPanels >
             <TabPanel className="Tab-panel">
                 <Row>
                     {categories.map(category => <Col key={category.id} xs={12} sm={6} md={6} lg={4} xl={3} xxl={3}>
@@ -89,8 +90,13 @@ export default function Gallery() {
                     </Col>)}
                 </Row>
             </TabPanel>
-            <TabPanel>Content 2</TabPanel>
-            <TabPanel>Content 3</TabPanel>
+            <TabPanel>
+                <Row>
+                    {categories2.map(category => <Col key={category.id} xs={12} sm={6} md={6} lg={4} xl={3} xxl={3}>
+                        <GalleryMedia type={category.type} source={category.source} />
+                    </Col>)}
+                </Row>
+            </TabPanel>
         </TabPanels>
         </TabGroup>
     </Row>

@@ -8,7 +8,24 @@ export const ourCourses = [
         role:'Senior Tutor'
     },
     shortDescription: "Learn to drive with ease in our beginner-friendly automatic car course — no clutch, no gear hassle, just smooth learning.",
-    longDescription: "Our Automatic Car Lessons are carefully crafted for learners who want a smoother and more approachable way to learn how to drive. Designed especially for beginners and those who may find manual transmission challenging, this course eliminates the complexity of clutch control and gear shifting. That means you can focus entirely on learning the rules of the road, developing safe driving habits, and gaining real confidence behind the wheel.\n\nTaught by fully qualified, DVSA-approved instructors, the course uses modern dual-control automatic vehicles, ensuring both comfort and safety. You’ll begin with the basics — understanding vehicle controls, proper observation, and safe maneuvering — and gradually progress to advanced skills like roundabouts, parallel parking, emergency stops, and driving in various road and weather conditions.\n\nEach lesson is tailored to your individual learning pace. Whether you're a complete beginner or someone looking to improve existing driving skills, our instructors adapt the course to fit your needs. We provide flexible scheduling (including evenings and weekends), pickup and drop-off services, and progress reports so you always know how you’re doing.\n\nAutomatic driving lessons are a great option for nervous drivers, older learners, and anyone looking to get their license efficiently and confidently. The simplified controls make it easier to focus on road awareness, decision-making, and safety, without the distractions of changing gears.\n\nIn addition to in-car training, you'll also have access to theory test resources, one-on-one instructor support, and mock test simulations to prepare you for the real thing. Our goal is not just to help you pass the test, but to become a skilled, responsible, and confident driver for life.",
+    longDescription: `Our Automatic Car Lessons are carefully crafted for learners who want a smoother and more 
+    approachable way to learn how to drive. Designed especially for beginners and those who may find manual 
+    transmission challenging, this course eliminates the complexity of clutch control and gear shifting. 
+    That means you can focus entirely on learning the rules of the road, developing safe driving habits, and
+     gaining real confidence behind the wheel.\n\nTaught by fully qualified, DVSA-approved instructors, 
+     the course uses modern dual-control automatic vehicles, ensuring both comfort and safety. 
+     You’ll begin with the basics — understanding vehicle controls, proper observation, and safe maneuvering 
+     — and gradually progress to advanced skills like roundabouts, parallel parking, emergency stops, 
+     and driving in various road and weather conditions.\n\nEach lesson is tailored to your individual learning pace.
+      Whether you're a complete beginner or someone looking to improve existing driving skills, our instructors adapt
+       the course to fit your needs. We provide flexible scheduling (including evenings and weekends), pickup and 
+       drop-off services, and progress reports so you always know how you’re doing.\n\nAutomatic driving lessons 
+       are a great option for nervous drivers, older learners, and anyone looking to get their license efficiently 
+       and confidently. The simplified controls make it easier to focus on road awareness, decision-making, and 
+       safety, without the distractions of changing gears.\n\nIn addition to in-car training, 
+       you'll also have access to theory test resources, one-on-one instructor support, and mock test simulations 
+       to prepare you for the real thing. Our goal is not just to help you pass the test, but to become a skilled,
+        responsible, and confident driver for life.`,
     advantages: [
         "DVSA-approved instructors with years of experience",
         "Flexible lesson scheduling, including weekends and evenings",
@@ -20,8 +37,8 @@ export const ourCourses = [
         "Comprehensive on-road and off-road training",
         "Mock driving tests to simulate real exam conditions",
         "Theory test preparation materials and support",
-        "Real-time progress tracking and instructor feedback",
         "Pickup and drop-off service included",
+        "Real-time progress tracking and instructor feedback",
         "Free rescheduling and cancellation with 24-hour notice"
     ]
     },

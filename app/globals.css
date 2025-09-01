@@ -52,6 +52,20 @@ body {
 }
 
 body > div.allcourses-module__JwsRwq__container.row > div:nth-child(1) > div > nav > ol > li:nth-child(1) > a{
-    text-decoration: none;
-    color: whitesmoke;
+    text-decoration: none !important;
+    color: whitesmoke !important;
 }
+
+.breadcrumb {
+  color: white !important;
+}
+
+.breadcrumb a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb-item.active {
+  color: white !important;
+}
+

@@ -9,7 +9,7 @@ import locationStyles from "./location.module.css";
 import { Row } from 'react-bootstrap';
 import HeaderDesign from '../UI/headerDesign';
 
-const position: LatLngExpression = [51.505, -0.09];
+const position: LatLngExpression = [6.6194, 3.5105];
 
 export default function Location() {
   return (    

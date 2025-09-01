@@ -27,7 +27,7 @@ export default function QuickActions(){
                     <h1>10+</h1> 
                     <h3>years experience</h3>
                 </div>
-                <Image src={ImageSrc.src} 
+                <Image src={ImageSrc} 
                     width={0} height={0} 
                     style={{width:'100%', height:'100%'}} alt="quick action" />
             </Col>

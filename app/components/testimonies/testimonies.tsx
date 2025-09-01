@@ -13,36 +13,42 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import TestimoniesStyle from './testimonies.module.css';
-import { primary} from '@/colors/colors';
+import { charcoalGray1, offWhite2, primary} from '@/colors/colors';
 import ImgSrc from '../../../public/carousel 1.png';
 import TestimonyRating from './rating';
 import Image from 'next/image';
+import TestImg from './testImg';
 
 const ourServices = [
     {
         id:0,
-        title:"Get License",
-        description:'My ride was sweet like butter'
+        name:'Solomon kane',
+        title:"Polic Officer",
+        description:'I was really nervous at first, but the instructors were patient and encouraging. Now I drive with confidence every day.'
     },
     {
         id:1,
-        title:"Instructor Training",
-        description:'My ride was sweet like butter'
+        name:'Reymond Uche',
+        title:"IT Developer",
+        description:'he school guided me step by step until I got my driver’s license. The whole process was smooth and stress-free'
     },
     {
         id:2,
-        title:"Traffic Guidelines",
-        description:'My ride was sweet like butter'
+        name:'Taiwo Oludipo',
+        title:"Trader",
+        description:'I preferred learning with automatic cars. The lessons were smooth, and I picked it up faster than I expected.'
     }, 
     {
         id:3,
-        title:"Learn Driving",
-        description:'My ride was sweet like butter'
+        title:"Banker",
+        name:'Ken Master',
+        description:'Driving on the highway used to scare me. Thanks to the training, I can now handle long trips with confidence.'
     },
     {
         id:4,
-        title:"Video courses",
-        description:'My ride was sweet like butter'
+        name:'Ben Mark',
+        title:"Pilot",
+        description:'As a new resident, I needed to adjust to local driving rules. This school made the transition easy and stress-free.'
     }
 ]
 
@@ -102,29 +108,18 @@ export default function Tutors(){
                     width:'100%',
                     }}>
                 <div style={{padding:'50px 80px'}}>
-                    <Image 
-                        width={0}
-                        height={0}
-                        style={{
-                            width:'150px',
-                            height:'150px',
-                            borderRadius:'50%',
-                            padding:'6px', 
-                            border:`2px solid ${primary}`
-                        }}
-                        src={ImgSrc.src} 
-                        alt='avatar testimony' />
+                    <TestImg title={service.name} />
                 </div>
                 <div>
                     <TestimonyRating value={5} />
-                    <h6>Solomon Kane</h6>
-                    <p>GRAPHIC DESIGNER</p>
+                    <h6>{service.name}</h6>
+                    <p style={{color:offWhite2, fontWeight:'bolder'}}>{service.title.toUpperCase()}</p>
                     <p 
                         style={{
                             fontStyle:'italic', 
                             fontWeight:'bold', 
                             fontSize:'18px',
-                            // color:offWhite2
+                            color:charcoalGray1
                             }}>
                         &quot;{service.description}&quot;
                     </p>
