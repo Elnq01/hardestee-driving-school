@@ -20,10 +20,12 @@ import Image from 'next/image';
 import HeaderDesign from '../UI/headerDesign';
 import CourseImg from './courseImg';
 import {ourCourses} from "../../allcourses/coursesdata"
+import { useRouter } from 'next/navigation';
 
 
 
 export default function Courses(){
+    const navigate = useRouter()
   return (
     <Row className={CoursesStyle.container}>
         <HeaderDesign text1="Our" text2="Courses"/>        
@@ -75,7 +77,7 @@ export default function Courses(){
 
         {ourCourses.map(service => <SwiperSlide key={service.id} 
         style={{paddingBottom:'10px'}}>
-            <Card className='shadow' style={{border:'0px'}}>
+            <Card className='shadow' style={{border:'0px', height:'500px'}}>
                 <CourseImg title={service.title} />
                 <CardBody 
                 style={{
@@ -89,7 +91,7 @@ export default function Courses(){
                     <Card.Title style={{fontWeight:'bold'}}>{service.title}</Card.Title>
                     <p style={{color:"#74757B"}}>{service.shortDescription}</p>
                     <CustomBtn2 
-                        onClick={()=>{alert("Hello World!")}}
+                        onClick={()=>{navigate.push(`/allcourses/${service.link}`)}}
 
                     style={{alignSelf:"center"}}>View Course Details</CustomBtn2>
                 </CardBody>

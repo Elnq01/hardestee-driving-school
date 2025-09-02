@@ -27,12 +27,13 @@ export default function HowItWorks() {
           <h2 className={HowStyles.H2} >How Hardestee Driving School works?</h2>
         </div>
           <div className={HowStyles.videoContainer}>
-              <video 
+
+            <video 
                 onEnded={onPlayEnd}
                 ref={videoRef}
                 style={{
                     width:'100%', 
-                    // height:'500px', 
+                    height:'500px', 
                     // display:'block', 
                     // objectFit:'cover'
                     }} preload="none" poster="/how-hardestee-driving-school-works.png">
@@ -40,23 +41,36 @@ export default function HowItWorks() {
         
                 Your browser does not support the video tag.
             </video>
+            
             {showControl? null:<div style={{
               position:'absolute',
+              top:'50%',
+              // width:'100px',
+              margin:'auto',
+               inset: '0',  
+              // left:"50%",
               display:'flex',
               justifyContent:'center',
               alignItems:'center',
-              height:'100%',
-              width:'100%'
+              // height:'100%',
+              // width:'100%',
+              // background:'red'
+                  cursor:'pointer'
             }}>
               <button onClick={onPlayHandler} 
                 style={{
                   background:charcoalGray2,
                   borderRadius:"50%",
                   padding:'20px',
+                  cursor:'pointer'
                   }}>
                 <FaPlay size={50} color={offWhite2} />
               </button>
             </div>}
+            
+
+
+            
           </div>
       </Row>
   );

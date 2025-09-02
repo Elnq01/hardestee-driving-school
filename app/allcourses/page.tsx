@@ -47,7 +47,7 @@ export default function AllCourses(){
         <Row className={allcoursesStyle.cardContainer}>
             {ourCourses.map(item => {
                 return <Col key={item.id} md={4} lg={4} xxl={4} xl={4} sm={12} xs={12}>
-                    <Card className='shadow' style={{border:'0px'}}>
+                    <Card className='shadow' style={{border:'0px',  height:'500px'}}>
                         <CourseImg title={item.title} />
                         <CardBody 
                         style={{

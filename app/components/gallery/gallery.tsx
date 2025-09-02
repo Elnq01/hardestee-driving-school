@@ -73,12 +73,12 @@ export default function Gallery() {
 
             <Tab as={Fragment}>
             {({ hover, selected }) => (
-                <button className={`${hover && GalleryStyles.tabActiveHover} ${selected  && GalleryStyles.tabActiveHover}`}>Tab 1</button>
+                <button className={`${hover && GalleryStyles.tabActiveHover} ${selected  && GalleryStyles.tabActiveHover}`}>Videoes</button>
             )}
             </Tab>
             <Tab as={Fragment}>
             {({ hover, selected }) => (
-                <button className={`${hover && GalleryStyles.tabActiveHover} ${selected  && GalleryStyles.tabActiveHover}`}>Tab 2</button>
+                <button className={`${hover && GalleryStyles.tabActiveHover} ${selected  && GalleryStyles.tabActiveHover}`}>Pictures</button>
             )}
             </Tab>
         </TabList>

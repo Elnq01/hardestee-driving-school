@@ -5,8 +5,11 @@ import AdvertBackImage from './AdvertItem';
 import ImageCarousel1 from "../../../public/carousel 1.png";
 import ImageCarousel2 from "../../../public/carousel 2.png";
 import CustomBtn from '../UI/CustomBtn';
+import { useRouter } from 'next/navigation';
 
 export default function Advert() {
+  const navigate = useRouter();
+
   return (
     <Carousel controls={false} fade style={{background:'red'}}>
       <Carousel.Item>
@@ -39,7 +42,7 @@ export default function Advert() {
                       }}>Driving</span> With Us.
                 </h2>
               <CustomBtn 
-                onClick={()=>{alert("Hello World!")}}
+                onClick={()=>{navigate.push('/allcourses')}}
                 style={{
                   width:'auto'
                   // justifySelf:'flex-start',
@@ -80,7 +83,7 @@ export default function Advert() {
                       padding:'5px 5px'
                 }}>Learn Easy</span> Car Driving Skill</h2>
               <CustomBtn 
-                onClick={()=>{alert("Hello World!")}}
+                onClick={()=>{navigate.push('/allcourses')}}
                 style={{
                   // justifySelf:'flex-start',
                   // alignSelf:'flex-start',
